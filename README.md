@@ -1,2 +1,3 @@
 # art_website
-My art website
+
+A website showing off my illustration work! 
