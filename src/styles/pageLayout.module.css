@@ -1,16 +1,89 @@
 
 .container {
-    background-color: var(--main-bg);
     color: black;
     height: 100vh;
 }
 
+.toggleNavButton {
+    display: none;
+}
+
 /* Mobile */
 @media (max-width: 700px) {
-    .container {
-        
+
+    .displayNav {
+        display: block;
+        animation: 3s infinite alternate slidein;
+
     }
+
+    .navigation {
+    } 
+
+    .navigation a {
+        color: var(--white)
+    }
+
+    .toggleNavButton {
+        width: 50px;
+        height: 50px;
+        background-color: var(--white);
+        display: block;
+        border: 1px solid var(--pipers-blue);
+        border-radius: 100px;
+        position: absolute;
+        right: 0px;
+        z-index: 11;
+    }
+
+    .closeNav {
+        display: none;
+    }
+
+    .navigationBox {
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        height: 100%;
+        text-align: center;
+        background-color: var(--pipers-black);
+
+    }
+
+    .navigationList li {
+        position: relative;
+        top: 100px;
+        display: grid;
+        font-size: x-large;
+    }
+
+    .navigationList li a {
+        padding: 16px;
+    }
+    
+    .imageContainer {
+        width: 250px;
+        height: 443px;
+        position: absolute;
+        bottom: 0px;
+   }
+
+   .socialsList {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    z-index: 20;
+    color: var(--white);
+   }
+
+   .socialsList li a {
+    display: inline;
+    font-size: small;
+    padding-left: 20px;
+   }
 }
+   
+  
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
