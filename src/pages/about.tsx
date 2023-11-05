@@ -1,5 +1,4 @@
 import PageLayout from '../layouts/pageLayout'
-
 import homeImg from '../images/bun.png'
 
 

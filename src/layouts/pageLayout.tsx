@@ -1,5 +1,3 @@
-"use client"; // This is a client component 👈🏽
-
 import { useState } from 'react'
 import styles from '../styles/PageLayout.module.css'
 import Image from 'next/image'

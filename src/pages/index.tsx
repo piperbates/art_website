@@ -1,4 +1,3 @@
-import styles from '../styles/Home.module.css'
 import PageLayout from '../layouts/pageLayout'
 
 import homeImg from '../images/bun.png'
