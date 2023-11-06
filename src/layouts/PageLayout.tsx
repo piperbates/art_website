@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styles from '../styles/PageLayout.module.css'
 import Link from 'next/link'
 import SocialLinks from '@/components/SocialLinks'
@@ -13,26 +13,26 @@ const PageLayout = ({pageHeader, children}: {
   pageHeader?: string, children: React.ReactNode
   }) => {  
 
-    const [navigationOpen, setNavigationOpen] = useState(false);
+    const [navigationOpen, setNavigationOpen] = useState<boolean>(false);
     
     const onScrollClick = () => {
       return window.scrollTo({
-        top:0, behavior: 'smooth'
+        top:0, 
+        behavior: 'smooth'
       })
     }
 
     return (<div className={styles.container}>
-
           <nav className={styles.navigation}>
           <button className={styles.toggleNavButton} onClick={() => setNavigationOpen(!navigationOpen)}>X</button>
           
           <div className={`${navigationOpen ? styles.displayNav : styles.closeNav} ${styles.navigationBox} ${phfont.className}`}>
             <ul className={styles.navigationList}>
-              <li><Link href='/'>Home</Link></li>
-              <li><Link href='/about'>About</Link></li>
-              <li><Link href='/books'>Books</Link></li>
-              <li><Link href='/comics'>Comics</Link></li>
-              <li><Link href='/other'>Other</Link></li>
+              <li onClick={()=>setNavigationOpen(false)}><Link href='/'>Home</Link></li>
+              <li onClick={()=>setNavigationOpen(false)}><Link href='/about'>About</Link></li>
+              <li onClick={()=>setNavigationOpen(false)}><Link href='/books'>Books</Link></li>
+              <li onClick={()=>setNavigationOpen(false)}><Link href='/comics'>Comics</Link></li>
+              <li onClick={()=>setNavigationOpen(false)}><Link href='/other'>Other</Link></li>
             </ul>
 
             <ul className={styles.socialsList}>

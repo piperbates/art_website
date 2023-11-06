@@ -1,19 +1,23 @@
 
 .container {
     color: black;
-    height: 100vh;
 }
 
 .topScrollButton {
  position: fixed;
  bottom: 50px;
- right:  50px;  
+ right:  8px;  
  width: 50px;
  height: 50px;
- background-color: var(--white);
+ background-color: var(--pipers-green);
  border-radius: 50%;
- border: 0px;
+ border: 1px solid var(--white);
 }
+
+.topScrollButton:hover {
+    background-color: black;
+}
+
 
 .header h1 {
     position: relative;
@@ -30,6 +34,7 @@
     0%   {left: 0px; top: -100px;}
     25%  {left: 0px; top: 0px;}
   }
+
 
 /* Mobile */
 @media (max-width: 700px) {
@@ -48,9 +53,6 @@
         animation: 3s infinite alternate slidein;
     }
 
-    .navigation {
-        overflow: hidden;
-    } 
 
     .navigation a {
         color: var(--pipers-blue)
@@ -63,8 +65,9 @@
         display: block;
         border: 1px solid var(--pipers-blue);
         border-radius: 100px;
-        position: absolute;
-        right: 0px;
+        position: fixed;
+        top: 3px;
+        right: 3px;
         z-index: 11;
     }
 
@@ -73,13 +76,15 @@
     }
 
     .navigationBox {
-        position: absolute;
+        position: fixed;
         width: 100%;
         z-index: 10;
         height: 100%;
         text-align: center;
         background-color: var(--pipers-black);
-
+        animation-name: navigationSlide;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
     }
 
     .navigationList li {
@@ -112,7 +117,7 @@
    
 
    .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
     padding: 10px;
@@ -131,6 +136,10 @@
    }
 
    
+   @keyframes navigationSlide {
+    0%   {left: 500px; top: 0px;}
+    25%  {left: 0px; top: 0px;}
+  }
 }
    
   
