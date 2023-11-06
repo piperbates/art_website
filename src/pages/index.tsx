@@ -1,10 +1,16 @@
+import styles from '../styles/page.module.css'
+import PageLayout from '../layouts/pageLayout'
 
-import UnderConstruction from '@/components/UnderConstruction'
+import homeImg from '../images/bun.png'
 
 
 export default function Home() {
   return (
-    <UnderConstruction />
-   
+    <PageLayout image={homeImg.src}>
+      <main className={styles.main}>
+        Home
+      </main>
+
+    </PageLayout>
   )
 }
