@@ -2,27 +2,37 @@ import { useState } from 'react'
 import styles from '../styles/PageLayout.module.css'
 import Link from 'next/link'
 import SocialLinks from '@/components/SocialLinks'
+import { Patrick_Hand } from 'next/font/google'
 
-const PageLayout = ({children}: {
-    children: React.ReactNode
-  }) => {
-    
+const phfont = Patrick_Hand({
+  weight: ["400"],
+  subsets: ['latin'],
+})
+
+const PageLayout = ({pageHeader, children}: {
+  pageHeader?: string, children: React.ReactNode
+  }) => {  
+
     const [navigationOpen, setNavigationOpen] = useState(false);
+    
+    const onScrollClick = () => {
+      return window.scrollTo({
+        top:0, behavior: 'smooth'
+      })
+    }
 
-    return <div className={styles.container}>
-      <header>
-        <nav className={styles.navigation}>
+    return (<div className={styles.container}>
+
+          <nav className={styles.navigation}>
           <button className={styles.toggleNavButton} onClick={() => setNavigationOpen(!navigationOpen)}>X</button>
           
-          <div className={`${navigationOpen ? styles.displayNav : styles.closeNav} ${styles.navigationBox}`}>
+          <div className={`${navigationOpen ? styles.displayNav : styles.closeNav} ${styles.navigationBox} ${phfont.className}`}>
             <ul className={styles.navigationList}>
-              <li>
-                <Link href='/'>Home</Link>
-                <Link href='/about'>About</Link>
-                <Link href='/books'>Books</Link>
-                <Link href='/comics'>Comics</Link>
-                <Link href='/other'>Other</Link>
-              </li>
+              <li><Link href='/'>Home</Link></li>
+              <li><Link href='/about'>About</Link></li>
+              <li><Link href='/books'>Books</Link></li>
+              <li><Link href='/comics'>Comics</Link></li>
+              <li><Link href='/other'>Other</Link></li>
             </ul>
 
             <ul className={styles.socialsList}>
@@ -32,19 +42,23 @@ const PageLayout = ({children}: {
             </ul>
           </div>
         </nav>
-      </header>
-      <div className={styles.imageContainer}>
-          
-          </div>
-          <main>
-            {children}
-          </main>
+        <header className={styles.header}>
+          <h1 className={phfont.className}>{pageHeader}</h1>
+        </header>
 
-          <div className={styles.footer}>
-            <SocialLinks />
-          </div>
-        
-    </div>
+
+      <div className="main-content">
+        {children}
+      </div>
+
+      <button className={styles.topScrollButton} onClick={()=>onScrollClick()}>
+        Scroll to top
+      </button>
+
+      <div className={styles.footer}>
+        <SocialLinks />
+      </div>
+    </div>)
 }
 
 export default PageLayout

@@ -4,12 +4,44 @@
     height: 100vh;
 }
 
+.topScrollButton {
+ position: fixed;
+ bottom: 50px;
+ right:  50px;  
+ width: 50px;
+ height: 50px;
+ background-color: var(--white);
+ border-radius: 50%;
+ border: 0px;
+}
+
+.header h1 {
+    position: relative;
+    animation-name: headerSlide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
 .toggleNavButton {
     display: none;
 }
 
+@keyframes headerSlide {
+    0%   {left: 0px; top: -100px;}
+    25%  {left: 0px; top: 0px;}
+  }
+
 /* Mobile */
 @media (max-width: 700px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header h1 {
+        color: var(--pipers-black);
+        text-shadow: 1px 1px 3px var(--white);
+        font-size: 2.5em;
+    }
 
     .displayNav {
         display: block;
@@ -21,7 +53,7 @@
     } 
 
     .navigation a {
-        color: var(--white)
+        color: var(--pipers-blue)
     }
 
     .toggleNavButton {
@@ -60,18 +92,6 @@
     .navigationList li a {
         padding: 16px;
     }
-    
-    .imageContainer {
-        width: 250px;
-        height: 443px;
-        position: absolute;
-        bottom: 0px;
-   }
-
-   .pageImg {
-    position: relative;
-   }
-
 
    .socialsList {
     width: 100%;
@@ -90,12 +110,15 @@
     padding-left: 20px;
    }
    
+
    .footer {
     position: absolute;
     bottom: 0px;
     width: 100%;
     padding: 10px;
     text-align: center;
+    background-color: var(--pipers-blue);
+    box-shadow: 3px 3px 10px var(--pipers-green);
    }
 
    .footer li {
@@ -104,8 +127,10 @@
    }
 
    .footer a {
-    color: var(--white)
+    color: var(--pipers-green)
    }
+
+   
 }
    
   

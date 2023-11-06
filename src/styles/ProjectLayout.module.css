@@ -1,0 +1,28 @@
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .projectGallery {
+        justify-content: center;
+        align-items: center;
+        align-content: center;        
+        width: 100%;
+        margin: auto;
+        position: relative;
+        animation-name: projectSlide;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+    }
+
+    .projectBox {
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    
+@keyframes projectSlide {
+    0%   {left: -400px; top: 0px;}
+    25%  {left: 0px; top: 0px;}
+  }
+
+}

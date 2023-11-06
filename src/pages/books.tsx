@@ -2,7 +2,7 @@ import PageLayout from '../layouts/PageLayout'
 
 export default function Home() {
   return (
-    <PageLayout>
+    <PageLayout pageHeader='Books'>
         Books
     </PageLayout>
   )

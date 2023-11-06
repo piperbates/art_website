@@ -10,11 +10,15 @@
     --pipers-black: #2A2B2A;
     --pipers-green: #BEC5AD;
     --white: #fff;
+    --black: #000;
+
 
     --main-bg: var(--pipers-blue);
     --main-font-color: var(--pipers-black);
 
-    --bg-gradiant: linear-gradient(to bottom, var(--white), var(--main-bg))
+    --bg-gradiant: linear-gradient(to bottom, var(--pipers-green), var(--main-bg));
+
+
 }
 
 * {
