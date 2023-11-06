@@ -12,7 +12,7 @@
     --white: #fff;
 
     --main-bg: var(--pipers-blue);
-    --main-font-color: var(var(--pipers-black));
+    --main-font-color: var(--pipers-black);
 
     --bg-gradiant: linear-gradient(to bottom, var(--white), var(--main-bg))
 }
@@ -31,6 +31,7 @@ body {
 
 body {
   background: var(--bg-gradiant);
+  background-attachment: fixed;
   color: var(--main-font-color)
 }
 
