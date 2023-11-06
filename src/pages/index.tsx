@@ -23,7 +23,7 @@ export default function Home() {
           <span className={styles.newsDate}>06th November 2023</span>
               <p>I&apos;m currently building This Website! Gosh!</p>
               <p>
-                Actually something a little bit exciting is happening, I&apos;m in the process of republishing all my books, which is kind of why this website is necessary. I mean, it&apos;s not <em>completely</em> necessary, because most illustrator / author types don&apos;t have websites, they just have a thrown together Wix page but those are <em>boring</em>, I want weird websites with rambling news sections, and since my "Real Job" TM is a software engineer I figured why not build it myself?</p>
+                Actually something a little bit exciting is happening, I&apos;m in the process of republishing all my books, which is kind of why this website is necessary. I mean, it&apos;s not <em>completely</em> necessary, because most illustrator / author types don&apos;t have websites, they just have a thrown together Wix page but those are <em>boring</em>, I want weird websites with rambling news sections, and since my &ldquo;Real Job&ldquo; TM is a software engineer I figured why not build it myself?</p>
               <p>
                 So yes that&apos;s why this website exists. Now you know!
               </p>
