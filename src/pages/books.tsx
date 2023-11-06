@@ -30,8 +30,8 @@ export default function Home() {
     <PageLayout pageHeader='Books'>
         Blah Blah Blah
       <ProjectLayout>
-        {bookData.map((book)=>{
-          return <ProjectBox project={book} />
+        {bookData.map((book, i)=>{
+          return <ProjectBox project={book} key={i} />
         })}
       </ProjectLayout>
     </PageLayout>
