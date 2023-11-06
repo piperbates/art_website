@@ -15,8 +15,25 @@
     }
 
     .projectBox {
-        margin-bottom: 100px;
         text-align: center;
+    }
+
+    .projectBox:first-child {
+        padding: 50px 0;
+    }
+
+    .projectBox:not(:first-child) {
+        padding: 100px 0;
+    }
+
+    .projectDescription {
+        margin-bottom: 100px;
+    }
+
+    .hr {
+        width: 50%;
+        color: var(--white);
+        margin: auto;
     }
 
     
