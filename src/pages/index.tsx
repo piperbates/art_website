@@ -1,5 +1,5 @@
-import styles from '../styles/page.module.css'
-import PageLayout from '../layouts/pageLayout'
+import styles from '../styles/Page.module.css'
+import PageLayout from '../layouts/PageLayout'
 
 import homeImg from '../images/bun.png'
 
