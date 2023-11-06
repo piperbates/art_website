@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import styles from '../styles/PageLayout.module.css'
-import Image from 'next/image'
+import Link from 'next/link'
+import SocialLinks from '@/components/SocialLinks'
 
-const PageLayout = ({image, children}: {
-    image: string, children: React.ReactNode
+const PageLayout = ({children}: {
+    children: React.ReactNode
   }) => {
     
     const [navigationOpen, setNavigationOpen] = useState(false);
@@ -16,28 +17,33 @@ const PageLayout = ({image, children}: {
           <div className={`${navigationOpen ? styles.displayNav : styles.closeNav} ${styles.navigationBox}`}>
             <ul className={styles.navigationList}>
               <li>
-                <a href='#'>Home</a>
-                <a href='#'>Books</a>
-                <a href='#'>Comics</a>
-                <a href='#'>Other</a>
+                <Link href='/'>Home</Link>
+                <Link href='/about'>About</Link>
+                <Link href='/books'>Books</Link>
+                <Link href='/comics'>Comics</Link>
+                <Link href='/other'>Other</Link>
               </li>
             </ul>
 
             <ul className={styles.socialsList}>
               <li>
-                <a href='#'>insta</a>
-                <a href='#'>ko-fi</a>
+                <SocialLinks />
               </li>
             </ul>
           </div>
         </nav>
       </header>
-        {children}
+      <div className={styles.imageContainer}>
+          
+          </div>
+          <main>
+            {children}
+          </main>
 
-        <div className={styles.imageContainer}>
-          <Image src={image} alt="Home Image" 
-            className={styles.pageImg} fill />
-        </div>
+          <div className={styles.footer}>
+            <SocialLinks />
+          </div>
+        
     </div>
 }
 

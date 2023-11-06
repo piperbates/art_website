@@ -17,6 +17,7 @@
     }
 
     .navigation {
+        overflow: hidden;
     } 
 
     .navigation a {
@@ -67,6 +68,11 @@
         bottom: 0px;
    }
 
+   .pageImg {
+    position: relative;
+   }
+
+
    .socialsList {
     width: 100%;
     position: absolute;
@@ -75,10 +81,30 @@
     color: var(--white);
    }
 
-   .socialsList li a {
+   .socialsList li {
     display: inline;
+   }
+
+   .socialsList li a {
     font-size: small;
     padding-left: 20px;
+   }
+   
+   .footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+   }
+
+   .footer li {
+    display: inline;
+    padding: 10px;
+   }
+
+   .footer a {
+    color: var(--white)
    }
 }
    
