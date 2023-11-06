@@ -39,11 +39,17 @@
     }
 
     .projectBox:not(:first-child) {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 
     .projectDescription {
         margin-bottom: 100px;
+    }
+
+    .soldOutText {
+        color: red;
+        text-decoration: underline;
+        font-weight: 500;
     }
 
     .projectImageWrapper {
@@ -62,6 +68,13 @@
         width: 50%;
         color: var(--white);
         margin: auto;
+    }
+
+    .bookIntro {
+        width: 300px;
+        margin: auto;
+        font-size: small;
+        
     }
 
     

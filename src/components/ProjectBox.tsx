@@ -9,6 +9,13 @@ const phfont = Patrick_Hand({
   })
 
 const ProjectBox = ({project}: any) => {
+
+    const displayText = () => {
+       return project.link ? <p><Link href={project.link}>{project.linkText}</Link></p>
+                     : <p className={styles.soldOutText}>Sold out</p>
+        
+    }
+
     return (
         <div className={styles.projectBox}>
             <h1 className={phfont.className}>{project.title}</h1>
@@ -17,7 +24,7 @@ const ProjectBox = ({project}: any) => {
             </div>
             <div className={styles.projectDescription}>
                 <p>{project.description}</p>
-                {project.link && <p><Link href={project.link}>Buy on Amazon</Link></p>}
+                {displayText()}
             </div>
             <hr className={styles.hr} />
         </div>
