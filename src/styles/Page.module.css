@@ -40,23 +40,50 @@
 
   .content h2 {
     color: var(--white);
-    margin-bottom: 10px;
     font-size: em;
-    letter-spacing: 2px;;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 24px;
   }
 
-  .pageImageContainer {
+  .introBox p {
+    margin-bottom: 50px;
+  }
+
+  .newsBox {
+    text-align: left;  
+  }
+
+  .newsBox p {
+    margin: 10px;
+    font-size:smaller;
+  }
+  .newsDate {
+    font-style: italic;
+    text-decoration: underline;
+    font-size: x-small;
+  }
+
+  .pageImageContainer,.bottomImageContainer {
     width: 200px;
     height: 354px;
     position: relative;
     left: 50%;
-    top: -50px;
     transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
     animation-name: imgSlide;
     animation-duration: 4s;
     animation-iteration-count: 1;
+  }
+
+  .pageImageContainer {
+    top: -50px;
+  }
+
+  .bottomImageContainer {
+    top: 50px;
+   
   }
   
   @keyframes imgSlide {
