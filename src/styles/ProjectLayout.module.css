@@ -16,6 +16,22 @@
 
     .projectBox {
         text-align: center;
+        width: 300px;
+        margin: auto;
+    }
+
+    .projectBox p {
+        text-align: justify;
+        font-size: small;
+        margin-bottom: 10px;
+    }
+
+    .projectBox a {
+        color: var(--pipers-green);
+    }
+
+    .projectBox a:hover {
+        color: var(--white)
     }
 
     .projectBox:first-child {
@@ -28,6 +44,18 @@
 
     .projectDescription {
         margin-bottom: 100px;
+    }
+
+    .projectImageWrapper {
+        margin: auto;
+        position: relative;
+        width: 250px;
+        height: 250px;
+    }
+
+    .projectImageWrapper img {
+        padding: 20px;
+
     }
 
     .hr {

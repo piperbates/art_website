@@ -14,6 +14,20 @@ const PageLayout = ({pageHeader, children}: {
   }) => {  
 
     const [navigationOpen, setNavigationOpen] = useState<boolean>(false);
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(()=>{
+      const handleScrollButtonVisible = () => {
+        window.pageYOffset > 200 ? setShowButton(true) : setShowButton(false)
+      };
+
+      window.addEventListener('scroll', handleScrollButtonVisible);
+
+      return () => {
+        window.removeEventListener('scroll', handleScrollButtonVisible)
+      }
+
+    }, [])
     
     const onScrollClick = () => {
       return window.scrollTo({
@@ -32,6 +46,7 @@ const PageLayout = ({pageHeader, children}: {
               <li onClick={()=>setNavigationOpen(false)}><Link href='/'>Home</Link></li>
               <li onClick={()=>setNavigationOpen(false)}><Link href='/about'>About</Link></li>
               <li onClick={()=>setNavigationOpen(false)}><Link href='/books'>Books</Link></li>
+              <li onClick={()=>setNavigationOpen(false)}><Link href='/illustration'>Illustration</Link></li>
               <li onClick={()=>setNavigationOpen(false)}><Link href='/comics'>Comics</Link></li>
               <li onClick={()=>setNavigationOpen(false)}><Link href='/other'>Other</Link></li>
             </ul>
@@ -53,9 +68,12 @@ const PageLayout = ({pageHeader, children}: {
         {children}
       </div>
 
-      <button className={styles.topScrollButton} onClick={()=>onScrollClick()}>
+      {
+        showButton && <button className={styles.topScrollButton} onClick={()=>onScrollClick()}>
         &#8593;
       </button>
+      }
+      
 
       <div className={styles.footer}>
         <SocialLinks />

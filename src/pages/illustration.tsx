@@ -5,7 +5,7 @@ import bun from '../images/bun.png'
 
 export default function Home() {
 
-  const comicData = [
+  const artData = [
     {
       title: "This is a Project",
       image: bun.src,
@@ -28,11 +28,11 @@ export default function Home() {
 
 
   return (
-    <PageLayout pageHeader='Comics'>
+    <PageLayout pageHeader='Illustration'>
       Blah Blah Blah
       <ProjectLayout>
-      {comicData.map((comic, i)=>{
-          return <ProjectBox project={comic} key={i} />
+      {artData.map((art, i)=>{
+          return <ProjectBox project={art} key={i} />
         })}
       </ProjectLayout>
     </PageLayout>
