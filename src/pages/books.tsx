@@ -30,7 +30,7 @@ export default function Home() {
 
   return (
     <PageLayout pageHeader='Books'>
-        I've published and self published a variety of books for a mix of ages. Read the descriptions below to find out more:
+        I&apos;ve published and self published a variety of books for a mix of ages. Read the descriptions below to find out more:
       <ProjectLayout>
         {bookData.map((book, i)=>{
           return <ProjectBox project={book} key={i} />
