@@ -9,13 +9,13 @@
  right:  8px;  
  width: 50px;
  height: 50px;
- background-color: var(--pipers-green);
+ background-color: var(--white);
  border-radius: 50%;
- border: 1px solid var(--white);
+ border: 0px;
 }
 
 .topScrollButton:hover {
-    background-color: black;
+    background-color: var(--pipers-green);
 }
 
 
@@ -39,27 +39,26 @@
         padding: 10px;
     }
 
-        
-
     .headerBox {
         background-color: var(--pipers-green);
         position: fixed; top: 0px;
         z-index: 5;
         width: 100%;
         display: inline;
-    }
-
-    .header h1 {
         animation-name: headerSlide;
         animation-duration: 4s;
         animation-iteration-count: 1;
-        
+        max-height: 75px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
     }
 
     .header h1 {
         color: var(--pipers-black);
         text-shadow: 1px 1px 3px var(--white);
-        font-size: 2.5em;
+        width: 100%;
+        font-size: 10vmin; 
     }
 
     .displayNav {
@@ -81,8 +80,8 @@
         border-radius: 100px;
         z-index: 11;
         position: fixed;
-        right: 10px;
-        top: 15px;
+        right: 0px;
+        margin: 10px;
     }
 
     .toggleNavButton:hover {
@@ -131,6 +130,14 @@
    .socialsList li a {
     font-size: small;
     padding-left: 20px;
+   }
+
+   .mainContent {
+    height: 100%;
+    text-align: center;
+    overflow: visible;
+    margin-bottom: 100px;
+
    }
    
 

@@ -54,7 +54,7 @@ const PageLayout = ({pageHeader, children}: {
       </div>
 
       <button className={styles.topScrollButton} onClick={()=>onScrollClick()}>
-        Scroll to top
+        &#8593;
       </button>
 
       <div className={styles.footer}>

@@ -36,6 +36,7 @@ body {
 body {
   background: var(--bg-gradiant);
   background-attachment: fixed;
-  color: var(--main-font-color)
+  color: var(--main-font-color);
+  font-family: Arial, Helvetica, sans-serif;
 }
 

@@ -6,15 +6,14 @@ import homeImg from '../images/selfportrait.png';
 export default function Home() {
   return (
     <PageLayout pageHeader='Piper Strange Art'>
-      <div className='wrapper'>
         <div className={styles.pageImageContainer}>
-          <Image src={homeImg} alt="me" fill />
+          <Image src={homeImg} alt="me" placeholder='blur' fill  />
         </div>      
 
         <div className={styles.content}>
-            Hello
+          <h2>Welcome to the world of Piper Strange</h2>
+            Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello Hello HelloHello Hello
         </div>
-      </div>
     </PageLayout>
   )
 }
