@@ -18,32 +18,33 @@
   }
 }
 
-
 /* Mobile */
 @media (max-width: 700px) {
 
+  .wrapper {
+    border: 1px solid red;
+  }
   .content {
     animation-name: slide;
     animation-duration: 4s;
     animation-iteration-count: 1;
     position: relative;
     top: 0px;
+    text-align: center;
   }
 
   .pageImageContainer {
     width: 200px;
     height: 354px;
     position: relative;
-    top: -10px;
+    top: -20px;
     animation-name: slide;
     animation-duration: 4s;
     animation-iteration-count: 1;
   }
   
   @keyframes slide {
-    0%   {left: 0px; top: 600px;}
-    25%  {left: 0px; top: -10px;}
+    0%   {left: -400px; top: 0px;}
+    25%  {left: 0px; top: -20px;}
   }
-  
-
 }

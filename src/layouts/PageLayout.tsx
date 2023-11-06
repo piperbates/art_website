@@ -23,7 +23,8 @@ const PageLayout = ({pageHeader, children}: {
     }
 
     return (<div className={styles.container}>
-          <nav className={styles.navigation}>
+      <div className={styles.headerBox}>
+        <nav className={styles.navigation}>
           <button className={styles.toggleNavButton} onClick={() => setNavigationOpen(!navigationOpen)}>X</button>
           
           <div className={`${navigationOpen ? styles.displayNav : styles.closeNav} ${styles.navigationBox} ${phfont.className}`}>
@@ -45,9 +46,10 @@ const PageLayout = ({pageHeader, children}: {
         <header className={styles.header}>
           <h1 className={phfont.className}>{pageHeader}</h1>
         </header>
+      </div>
 
 
-      <div className="main-content">
+      <div className={styles.mainContent}>
         {children}
       </div>
 

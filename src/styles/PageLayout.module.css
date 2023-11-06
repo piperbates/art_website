@@ -19,15 +19,12 @@
 }
 
 
-.header h1 {
-    position: relative;
-    animation-name: headerSlide;
-    animation-duration: 4s;
-    animation-iteration-count: 1;
-}
-
 .toggleNavButton {
     display: none;
+}
+
+.mainContent {
+    margin-top: 100px;
 }
 
 @keyframes headerSlide {
@@ -40,6 +37,23 @@
 @media (max-width: 700px) {
     .header {
         padding: 10px;
+    }
+
+        
+
+    .headerBox {
+        background-color: var(--pipers-green);
+        position: fixed; top: 0px;
+        z-index: 5;
+        width: 100%;
+        display: inline;
+    }
+
+    .header h1 {
+        animation-name: headerSlide;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        
     }
 
     .header h1 {
@@ -65,10 +79,14 @@
         display: block;
         border: 1px solid var(--pipers-blue);
         border-radius: 100px;
-        position: fixed;
-        top: 3px;
-        right: 3px;
         z-index: 11;
+        position: fixed;
+        right: 10px;
+        top: 15px;
+    }
+
+    .toggleNavButton:hover {
+        background-color: aliceblue;
     }
 
     .closeNav {
