@@ -29,6 +29,11 @@
     margin-top: 100px;
 }
 
+.headerBox{
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+
+}
+
 @keyframes headerSlide {
     0%   {left: 0px; top: -100px;}
     25%  {left: 0px; top: 0px;}
@@ -47,6 +52,15 @@
     text-shadow: 1px 1px 3px var(--white);
   }
 
+  .navigation a {
+    color: var(--pipers-blue)
+}
+
+.navigation a:hover {
+    color: var(--pipers-green);
+    text-decoration: none;
+}
+
   .footer {
     width: 100%;
     padding: 10px;
@@ -63,6 +77,8 @@
    .footer a {
     color: var(--pipers-green)
    }
+
+
 
 
 /* Mobile */
@@ -89,15 +105,6 @@
 
     .displayNav {
         display: block;
-    }
-
-    .navigation a {
-        color: var(--pipers-blue)
-    }
-
-    .navigation a:hover {
-        color: var(--pipers-green);
-        text-decoration: none;
     }
 
     .toggleNavButton {
@@ -211,7 +218,8 @@
     }
 
     .navigation li {
-        display: inline;
+        display: block;
+        margin: 50px;
     }
 
     .toggleNavButton {
@@ -225,6 +233,15 @@
         z-index: 11;
     }
 
+    .socialsList {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    .socialsList li {
+        display: inline;
+       }
 
     .displayNav {
         display: block;
@@ -234,6 +251,18 @@
         display: none;
     }
 
+    .navigationBox {
+        animation-name: navigationSlide;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+
+
+    @keyframes navigationSlide {
+        0%   {left: 500px; top: 0px;}
+        25%  {left: 0px; top: 0px;}
+      }
+
     .topScrollButton {
         width: 100px;
         height: 100px;
@@ -242,7 +271,15 @@
 
     .footer {
         width: 100%;
-        text-align: center;
+        height: 75px;
+        margin-top: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .footer {
+        font-size: large;
     }
 
     .footer li {
