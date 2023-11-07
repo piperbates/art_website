@@ -20,6 +20,8 @@
 
 
 .toggleNavButton {
+    background-color: var(--white);
+    border: 1px solid var(--pipers-blue);
     display: none;
 }
 
@@ -32,6 +34,36 @@
     25%  {left: 0px; top: 0px;}
   }
 
+  /* Generic styling */
+
+  .headerBox {
+    background-color: var(--pipers-green);
+    position: fixed; top: 0px;
+    width: 100%;
+  }
+
+  .header h1 {
+    color: var(--pipers-black);
+    text-shadow: 1px 1px 3px var(--white);
+  }
+
+  .footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--pipers-blue);
+    box-shadow: 3px 3px 10px var(--pipers-green);
+   }
+
+   .footer li {
+    display: inline;
+    padding: 10px;
+   }
+
+   .footer a {
+    color: var(--pipers-green)
+   }
+
 
 /* Mobile */
 @media (max-width: 700px) {
@@ -39,12 +71,13 @@
         padding: 10px;
     }
 
+    .header h1 {
+        font-size: 8vmin; 
+
+    }
+
     .headerBox {
-        background-color: var(--pipers-green);
-        position: fixed; top: 0px;
         z-index: 5;
-        width: 100%;
-        display: inline;
         animation-name: headerSlide;
         animation-duration: 4s;
         animation-iteration-count: 1;
@@ -54,18 +87,9 @@
         align-content: center;
     }
 
-    .header h1 {
-        color: var(--pipers-black);
-        text-shadow: 1px 1px 3px var(--white);
-        width: 100%;
-        font-size: 10vmin; 
-    }
-
     .displayNav {
         display: block;
-        animation: 3s infinite alternate slidein;
     }
-
 
     .navigation a {
         color: var(--pipers-blue)
@@ -79,9 +103,7 @@
     .toggleNavButton {
         width: 50px;
         height: 50px;
-        background-color: var(--white);
         display: block;
-        border: 1px solid var(--pipers-blue);
         border-radius: 100px;
         z-index: 11;
         position: fixed;
@@ -142,29 +164,13 @@
     text-align: center;
     overflow: visible;
     margin-bottom: 100px;
-
    }
-   
+
    .footer {
     position: fixed;
     bottom: 0px;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    background-color: var(--pipers-blue);
-    box-shadow: 3px 3px 10px var(--pipers-green);
    }
-
-   .footer li {
-    display: inline;
-    padding: 10px;
-   }
-
-   .footer a {
-    color: var(--pipers-green)
-   }
-
-   
+      
    @keyframes navigationSlide {
     0%   {left: 500px; top: 0px;}
     25%  {left: 0px; top: 0px;}
@@ -174,9 +180,73 @@
   
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-    .container {
+@media (min-width: 701px) and (max-width: 1120px) 
+{
+    .headerBox {
+        min-height: 100px;
+        z-index: 5;
+    }
+
+    .headerBox h1 {
+        font-size: 10vmin; 
+    }
+
+    .navigationBox {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        height: 100%;
+        text-align: center;
+        background-color: var(--pipers-black);
+        animation-name: navigationSlide;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+
+    .navigationList li {
+        position: relative;
+        top: 100px;
+        display: grid;
+        font-size: x-large;
+    }
+
+    .navigation li {
+        display: inline;
+    }
+
+    .toggleNavButton {
+        width: 75px;
+        height: 75px;
+        display: block;
+        border-radius: 100px;
+        position: fixed;
+        right: 0px;
+        margin: 10px;
+        z-index: 11;
+    }
 
 
+    .displayNav {
+        display: block;
+    }
+    
+    .closeNav {
+        display: none;
+    }
+
+    .topScrollButton {
+        width: 100px;
+        height: 100px;
+        font-size: x-large;
+    }
+
+    .footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer li {
+        display: inline;
+        margin: 20px;
     }
 }

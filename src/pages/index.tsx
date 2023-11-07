@@ -3,6 +3,14 @@ import styles from '../styles/Page.module.css'
 import PageLayout from '../layouts/PageLayout';
 import homeImg from '../images/selfportrait.png';
 import bun from '../images/bun.png';
+import { Patrick_Hand } from 'next/font/google';
+
+const phfont = Patrick_Hand({
+  weight: ["400"],
+  subsets: ['latin'],
+})
+
+
 
 export default function Home() {
   return (
@@ -13,12 +21,12 @@ export default function Home() {
 
         <div className={styles.content}>
           <div className={styles.introBox}>
-          <h2>Welcome to the world of Piper Strange</h2>
+          <h2 className={phfont.className}>Welcome to the world of Piper Strange</h2>
             <p>
               Hello, welcome to my portfolio! I&apos;m Piper, a nonbinary illustrator and comic artist from the UK. I like to make things and then inflict them on people on the internet. 
             </p>
           </div>
-          <h2>News</h2>
+          <h2 className={phfont.className}>News</h2>
           <div className={styles.newsBox}>
           <span className={styles.newsDate}>06th November 2023</span>
               <p>I&apos;m currently building This Website! Gosh!</p>
