@@ -113,19 +113,24 @@
     width: 400px;
     height: 709px; 
     margin: auto;
+    animation-name: imgSlide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
   }
 
   .content {
     max-width: 500px;
     margin: auto;
+    animation-name: textSlide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    position: relative;
   }
 
   .content h2 {
     font-size: 3em;
     margin-bottom: 30px;
     text-align: center;
-
-
   }
 
   .introBox {
@@ -145,5 +150,15 @@
     font-size: smaller;
   }
   
+  
+  @keyframes imgSlide {
+    0%   {left: -500px; top: 0px;}
+    25%  {left: 0; top: 0px;}
+  }
+
+  @keyframes textSlide {
+    0%   {left: -600px; top: 0px;}
+    25%  {left: 0px; top: 0px;}
+  }
 
 }

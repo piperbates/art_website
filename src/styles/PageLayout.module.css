@@ -1,5 +1,8 @@
 
-.container {
+
+  /* Generic styling */
+
+  .container {
     color: black;
 }
 
@@ -29,22 +32,20 @@
     margin-top: 100px;
 }
 
-.headerBox{
-    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
-
-}
-
+  
 @keyframes headerSlide {
     0%   {left: 0px; top: -100px;}
     25%  {left: 0px; top: 0px;}
   }
 
-  /* Generic styling */
-
   .headerBox {
+    animation-name: headerSlide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
     background-color: var(--pipers-green);
     position: fixed; top: 0px;
     width: 100%;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
   }
 
   .header h1 {
@@ -94,9 +95,6 @@
 
     .headerBox {
         z-index: 5;
-        animation-name: headerSlide;
-        animation-duration: 4s;
-        animation-iteration-count: 1;
         max-height: 75px;
         justify-content: center;
         align-items: center;
@@ -183,8 +181,6 @@
     25%  {left: 0px; top: 0px;}
   }
 }
-   
-  
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) 
@@ -286,4 +282,5 @@
         display: inline;
         margin: 20px;
     }
+    
 }

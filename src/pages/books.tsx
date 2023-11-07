@@ -17,7 +17,7 @@ export default function Home() {
         })}
       </ProjectLayout>
 
-      <div className={styles.bookIntro}>
+      <div className={styles.bookOutro}>
           Psst, I&apos;m in the process of republishing some of these books. If it&apos;s sold out, keep an eye on my socials and they might be available soon!
         </div>
 

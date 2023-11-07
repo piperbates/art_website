@@ -1,19 +1,49 @@
 
+.soldOutText {
+    color: red;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.hr {
+    color: var(--white);
+    margin: auto;
+}
+
+.projectBox a {
+    color: var(--white)
+
+}
+
+.projectBox a:hover {
+    color: var(--pipers-green);
+
+}
+
+.projectGallery {
+    justify-content: center;
+    align-items: center;
+    align-content: center;  
+    position: relative;
+    width: 100%;
+    margin: auto;
+    animation-name: projectSlide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+}
+
+.projectBox h1 {
+    color: var(--white);
+    text-align: center;
+}
+
+.bookIntro, .bookOutro {
+    margin: auto;
+}
+
+
 /* Mobile */
 @media (max-width: 700px) {
-
-    .projectGallery {
-        justify-content: center;
-        align-items: center;
-        align-content: center;        
-        width: 100%;
-        margin: auto;
-        position: relative;
-        animation-name: projectSlide;
-        animation-duration: 4s;
-        animation-iteration-count: 1;
-    }
-
     .projectBox {
         text-align: center;
         width: 300px;
@@ -26,14 +56,6 @@
         margin-bottom: 10px;
     }
 
-    .projectBox a {
-        color: var(--pipers-green);
-    }
-
-    .projectBox a:hover {
-        color: var(--white)
-    }
-
     .projectBox:first-child {
         padding: 50px 0;
     }
@@ -44,12 +66,6 @@
 
     .projectDescription {
         margin-bottom: 100px;
-    }
-
-    .soldOutText {
-        color: red;
-        text-decoration: underline;
-        font-weight: 500;
     }
 
     .projectImageWrapper {
@@ -66,15 +82,11 @@
 
     .hr {
         width: 50%;
-        color: var(--white);
-        margin: auto;
     }
 
-    .bookIntro {
+    .bookIntro, .bookOutro {
         width: 300px;
-        margin: auto;
         font-size: small;
-        
     }
 
     
@@ -88,5 +100,43 @@
 /* Tablets */
 
 @media (min-width: 701px) and (max-width: 1120px) {
+
+    .projectGallery, .bookIntro, .bookOutro {
+        width: 500px;
+    }
+
+    .projectGallery {
+    animation-name: projectSlide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    }
+    
+    .bookIntro {
+        margin-top: 200px;
+        margin-bottom: 75px;;
+    }
+
+    .bookOutro {
+        margin-top:75px;
+        margin-bottom: 100px;
+    }
+
+    .projectImageWrapper {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 30px auto;
+    }
+
+    .projectDescription {
+        margin-bottom: 100px;
+        text-align: justify;
+    }
+
+
+    @keyframes projectSlide {
+        0%   {left: -400px; top: 0px;}
+        25%  {left: 0px; top: 0px;}
+      }
 
 }
