@@ -4,11 +4,16 @@ import ProjectLayout from '@/layouts/ProjectLayout'
 
 import comicData from '@/projects/comics';
 
-export default function Home() {
+const Comics = () => {
+
+  const projectData = {
+    projectIntro: "Comics and stuff",
+    projectOutro: "Comics footer"
+  }
+
   return (
     <PageLayout pageHeader='Comics'>
-      Blah Blah Blah
-      <ProjectLayout>
+      <ProjectLayout projectIntro={projectData.projectIntro} projectOutro={projectData.projectOutro}>
       {comicData.map((comic, i)=>{
           return <ProjectBox project={comic} key={i} />
         })}
@@ -16,3 +21,5 @@ export default function Home() {
     </PageLayout>
   )
 }
+
+export default Comics

@@ -37,7 +37,7 @@
     text-align: center;
 }
 
-.bookIntro, .bookOutro {
+.projectIntro, .projectOutro {
     margin: auto;
 }
 
@@ -84,7 +84,7 @@
         width: 50%;
     }
 
-    .bookIntro, .bookOutro {
+    .projectIntro, .projectOutro {
         width: 300px;
         font-size: small;
     }
@@ -101,11 +101,11 @@
 
 @media (min-width: 701px) and (max-width: 1120px) {
 
-    .projectGallery, .bookIntro, .bookOutro {
+    .projectGallery, .projectIntro, .projectOutro {
         width: 500px;
     }
 
-    .bookIntro, .bookOutro {
+    .projectIntro, .projectOutro {
         font-size: large;
     }
 
@@ -119,12 +119,12 @@
         font-size: 3em;
     }
     
-    .bookIntro {
-        margin-top: 200px;
+    .projectIntro {
+        margin-top: 100px;
         margin-bottom: 75px;;
     }
 
-    .bookOutro {
+    .projectOutro {
         margin-bottom: 100px;
     }
 

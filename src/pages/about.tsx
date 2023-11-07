@@ -1,8 +1,10 @@
 import PageLayout from '../layouts/PageLayout'
-export default function Home() {
+const About = () => {
   return (
     <PageLayout pageHeader='About'>
       About
     </PageLayout>
   )
 }
+
+export default About

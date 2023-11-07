@@ -116,6 +116,7 @@
     animation-name: imgSlide;
     animation-duration: 4s;
     animation-iteration-count: 1;
+    top: -40px;
   }
 
   .content {
@@ -125,6 +126,7 @@
     animation-duration: 4s;
     animation-iteration-count: 1;
     position: relative;
+    top: -40px;
   }
 
   .content h2 {
@@ -152,8 +154,8 @@
   
   
   @keyframes imgSlide {
-    0%   {left: -500px; top: 0px;}
-    25%  {left: 0; top: 0px;}
+    0%   {left: -500px; top: -40px;}
+    25%  {left: 0; top: -40px;}
   }
 
   @keyframes textSlide {

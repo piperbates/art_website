@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import styles from '../styles/Page.module.css'
-import PageLayout from '../layouts/PageLayout';
-import homeImg from '../images/selfportrait.png';
-import bun from '../images/bun.png';
+import styles from '@/styles/Page.module.css'
+import PageLayout from '@/layouts/PageLayout';
+import homeImg from '@/images/selfportrait.png';
+import bun from '@/images/bun.png';
 import { Patrick_Hand } from 'next/font/google';
 
 const phfont = Patrick_Hand({
@@ -12,7 +12,7 @@ const phfont = Patrick_Hand({
 
 
 
-export default function Home() {
+const Home = () => {
   return (
     <PageLayout pageHeader='Piper Strange Art'>
         <div className={styles.pageImageContainer}>
@@ -45,3 +45,5 @@ export default function Home() {
     </PageLayout>
   )
 }
+
+export default Home

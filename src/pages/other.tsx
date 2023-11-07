@@ -1,9 +1,11 @@
 import PageLayout from '../layouts/PageLayout'
 
-export default function Home() {
+const Other = () => {
   return (
     <PageLayout pageHeader='Other'>
         Other
     </PageLayout>
   )
 }
+
+export default Other
