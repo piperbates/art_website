@@ -192,6 +192,7 @@
 
     .headerBox h1 {
         font-size: 10vmin; 
+        margin: 10px;
     }
 
     .navigationBox {
