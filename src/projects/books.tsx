@@ -10,8 +10,10 @@ const bookData = [
       image: princessElephant.src,
       imageDescription: "The cover of The Princess and the Elephant, by Ellen Mellor and Piper Strange",
       description: "Written by Ellen Mellor and illustrated by Piper Strange. The Princess and the Elephant is a sweet, fun and funny fairytale for children of all genders about about acceptance, belief and the importance of support and allyship. ",
-      link: "https://www.amazon.com.au/Princess-Elephant-Ellen-Mellor/dp/1838426647",
-      linkText:  "Buy on Amazon"
+      link: {
+        href: "https://www.amazon.com.au/Princess-Elephant-Ellen-Mellor/dp/1838426647",
+        linkText:  "Buy on Amazon"
+      }
     },
 
     {

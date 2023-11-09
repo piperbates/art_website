@@ -11,7 +11,7 @@ const phfont = Patrick_Hand({
 const ProjectBox = ({project}: any) => {
 
     const displayText = () => {
-       return project.link ? <p><Link href={project.link}>{project.linkText}</Link></p>
+       return project.link ? <p><Link href={project.link.href} target='_blank'>{project.link.linkText}</Link></p>
                      : <p className={styles.soldOutText}>Sold out</p>
         
     }
@@ -20,7 +20,7 @@ const ProjectBox = ({project}: any) => {
         <div className={styles.projectBox}>
             <h1 className={phfont.className}>{project.title}</h1>
             <div className={styles.projectImageWrapper}>
-                <Image objectFit='contain' src={project.image} alt={project.imageDescription} fill />
+                <Image src={project.image} alt={project.imageDescription} fill />
             </div>
             <div className={styles.projectDescription}>
                 <p>{project.description}</p>
