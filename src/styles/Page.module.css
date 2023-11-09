@@ -2,13 +2,13 @@
 /* Generic styling */
 
 .pageImageContainer {
+  top: -60px;
   float: left;
 }
 
 .bottomImageContainer {
   margin: auto;
 }
-
 
 .pageImageContainer,.bottomImageContainer {
   position: relative;
@@ -28,10 +28,36 @@
 }
 
 .content {
+  padding: 20px;
   max-width: 1000px;
   margin: auto;
+  margin-bottom: 100px;
+
 }
 
+.content p {
+  margin-bottom: 20px;
+}
+
+.mugshot {
+  margin: auto;
+  text-align: center;
+}
+
+.mugshot img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.socialsBox li {
+  display: inline;
+}
+
+.socialsBox li:not(:last-child) {
+  margin-right: 40px;
+}
 
 /* Mobile */
 @media (max-width: 700px) {
@@ -128,6 +154,7 @@
     animation-iteration-count: 1;
     position: relative;
     top: -40px;
+    text-align: justify;
   }
 
   .content h2 {
