@@ -9,7 +9,7 @@ const Books = () => {
   return (
     <PageLayout pageHeader='Books'>
       <div className={styles.projectIntro}>
-        <p>I've published and self published a variety of books for a mix of ages. Read the descriptions below to find out more:</p>
+        <p>I&apos;ve published and self published a variety of books for a mix of ages. Read the descriptions below to find out more:</p>
         </div>
       <ProjectLayout>
         {bookData.map((book, i)=>{
@@ -18,7 +18,7 @@ const Books = () => {
       </ProjectLayout>
 
         <div className={styles.projectOutro}>
-        <p>Psst, I'm in the process of republishing some of these books. If it&apos;s sold out, keep an eye on my socials and they might be available soon!</p>
+        <p>Psst, I&apos;m in the process of republishing some of these books. If it&apos;s sold out, keep an eye on my socials and they might be available soon!</p>
         </div>
 
     </PageLayout>

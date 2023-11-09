@@ -6,16 +6,10 @@ import styles from '@/styles/Page.module.css'
 import artData from '@/projects/illustrations';
 
 const Illustration = () => {
-
-  const projectData = {
-    projectIntro: "Illustration and stuff",
-    projectOutro: "Illustration footer"
-  }
-
   return (
     <PageLayout pageHeader='Illustration'>
       <div className={styles.illustrationWrapper}>
-      <ProjectLayout projectIntro={projectData.projectIntro} projectOutro={projectData.projectOutro}>
+      <ProjectLayout>
       {artData.map((art, i)=>{
           return <ProjectBox project={art} key={i} />
         })}

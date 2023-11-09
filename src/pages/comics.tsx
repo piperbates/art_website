@@ -13,7 +13,7 @@ const Comics = () => {
   return (
     <PageLayout pageHeader='Comics'>
       <div className={styles.projectIntro}>
-        <p>My comics can be split into two different categories: Comic Strips and Graphic Novels. Click on the links below to be taken to the section you're most interested in.</p>
+        <p>My comics can be split into two different categories: Comic Strips and Graphic Novels. Click on the links below to be taken to the section you&apos;re most interested in.</p>
         <ul>
           <li><Link href="#comic-strips">Comic Strips</Link></li>
           <li><Link href="#graphic-novel">Graphic Novel</Link></li>
