@@ -1,13 +1,19 @@
 
+/* Generic styling */
 
-.content h2 {
-  color: var(--white);
+.pageImageContainer {
+  float: left;
 }
 
-/* Generic styling */
+.bottomImageContainer {
+  margin: auto;
+}
+
 
 .pageImageContainer,.bottomImageContainer {
   position: relative;
+  width: 400px;
+  height: 709px;
 }
 
 .newsDate {
@@ -16,10 +22,22 @@
   color: var(--white)
 }
 
+
+.content h2 {
+  color: var(--white);
+}
+
+.content {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
 /* Mobile */
 @media (max-width: 700px) {
 
   .content {
+    margin: unset;
     animation-name: textSlide;
     animation-duration: 4s;
     animation-iteration-count: 1;
@@ -66,6 +84,8 @@
     animation-name: imgSlide;
     animation-duration: 4s;
     animation-iteration-count: 1;
+    float: unset;
+
   }
 
   .pageImageContainer {
@@ -99,6 +119,8 @@
     animation-duration: 4s;
     animation-iteration-count: 1;
     top: -40px;
+    float: unset;
+
   }
 
   .content {

@@ -6,11 +6,6 @@ const ProjectLayout = (
     ) => {
     return <div className={styles.projectGallery}>
         {children}  
-
-        <div className={styles.projectOutro}>
-         
-
-        </div>  
     </div>
 };
 

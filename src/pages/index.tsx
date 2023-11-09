@@ -15,8 +15,9 @@ const phfont = Patrick_Hand({
 const Home = () => {
   return (
     <PageLayout pageHeader='Piper Strange Art'>
+
         <div className={styles.pageImageContainer}>
-          <Image src={homeImg} alt="me" placeholder='blur' fill  />
+          <Image src={homeImg} alt="me" fill  />
         </div>      
 
         <div className={styles.content}>
@@ -26,6 +27,7 @@ const Home = () => {
               Hello, welcome to my portfolio! I&apos;m Piper, a nonbinary illustrator and comic artist from the UK. I like to make things and then inflict them on people on the internet. 
             </p>
           </div>
+
           <h2 className={phfont.className}>News</h2>
           <div className={styles.newsBox}>
           <span className={styles.newsDate}>06th November 2023</span>
