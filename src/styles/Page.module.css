@@ -77,24 +77,22 @@
   .pageImageContainer,.bottomImageContainer {
     width: 200px;
     height: 354px;
-    left: 50%;
+    float: unset;
+  }
+
+  .pageImageContainer {
     transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
     animation-name: imgSlide;
     animation-duration: 4s;
     animation-iteration-count: 1;
-    float: unset;
-
-  }
-
-  .pageImageContainer {
     top: -50px;
+    left: 50%;
   }
 
   .bottomImageContainer {
     top: 50px;
-   
   }
   
   @keyframes imgSlide {
@@ -120,7 +118,6 @@
     animation-iteration-count: 1;
     top: -40px;
     float: unset;
-
   }
 
   .content {
