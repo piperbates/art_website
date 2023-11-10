@@ -154,6 +154,19 @@
         background-color: aliceblue;
     }
 
+    .burger1, .burger2, .burger3 {
+        height: 10px;
+        padding: 0px;
+        margin: 0px;
+        border-top: 2px solid black;
+        width: 25px;
+        margin: auto;
+    }
+
+    .burger1 {
+        margin-top: 5px;
+    }   
+
     .closeNav {
         display: none;
     }
@@ -277,6 +290,19 @@
         right: 0px;
         margin: 10px;
         z-index: 11;
+    }
+
+    .burger1, .burger2, .burger3 {
+        height: 10px;
+        padding: 0px;
+        margin: 0px;
+        border-top: 2px solid black;
+        width: 25px;
+        margin: auto;
+    }
+
+    .burger1 {
+        margin-top: 5px;
     }
 
     .socialsList {

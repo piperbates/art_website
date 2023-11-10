@@ -22,7 +22,6 @@ const PageLayout = ({pageHeader, children}: {
       };
 
       window.addEventListener('scroll', handleScrollButtonVisible);
-
       return () => {
         window.removeEventListener('scroll', handleScrollButtonVisible)
       }
@@ -36,10 +35,23 @@ const PageLayout = ({pageHeader, children}: {
       })
     }
 
+    const toggleNavButtonDisplay = () => {
+      return navigationOpen 
+          ? <p>X</p> 
+          : (
+          <div><div className={styles.burger1}/>
+            <div className={styles.burger2}/>
+            <div className={styles.burger3}/>
+          </div>
+          )
+    }
+
     return (<div className={styles.container}>
       <div className={styles.headerBox}>
         <nav className={styles.navigation}>
-          <button className={styles.toggleNavButton} onClick={() => setNavigationOpen(!navigationOpen)}>X</button>
+          <button className={styles.toggleNavButton} onClick={() => setNavigationOpen(!navigationOpen)}>
+            {toggleNavButtonDisplay()}
+          </button>
           
           <div className={`${navigationOpen ? styles.displayNav : styles.closeNav} ${styles.navigationBox} ${phfont.className}`}>
             <ul className={styles.navigationList}>
