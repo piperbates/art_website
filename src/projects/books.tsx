@@ -1,8 +1,8 @@
-import princessElephant from '../images/princess_and_the_elephant.jpg';
-import bonePrincess from '../images/boneprincess.png'
-import llamas from '../images/llamas.png'
-import loveYouLots from '../images/loveyoulots.png'
-import loveLetters from '../images/loveletters.jpg'
+import princessElephant from '../images/projects/books/princess_and_the_elephant.jpg';
+import bonePrincess from '../images/projects/books/boneprincess.png'
+import llamas from '../images//projects/books/llamas-book.png'
+import loveYouLots from '../images/projects/books/loveyoulots.png'
+import loveLetters from '../images/projects/books/loveletters.jpg'
 
 const bookData = [
     {

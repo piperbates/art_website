@@ -1,10 +1,10 @@
-import lib from '@/images/life_is_beautiful.png';
-import pursuitMagic from '@/images/pursuitmagic.jpg';
-import scienceRats from '@/images/science-rats.png';
-import worryComic from '@/images/worry-comic.png';
-import nameComic from '@/images/name-comic.jpg';
-import ppgvsbm from '@/images/ppgvsbm.png';
-import spaceBunnies from '@/images/space_bunnies.png';
+import lib from '@/images/projects/comics/graphic-novels/life_is_beautiful.png';
+import pursuitMagic from '@/images/projects/comics/graphic-novels/pursuitmagic.jpg';
+import scienceRats from '@/images//projects/comics/graphic-novels/science-rats.png';
+import worryComic from '@/images//projects/comics/graphic-novels/worry-comic.png';
+import nameComic from '@/images//projects/comics/graphic-novels/name-comic.jpg';
+import ppgvsbm from '@/images//projects/comics/graphic-novels/ppgvsbm.png';
+import spaceBunnies from '@/images//projects/comics/graphic-novels/space_bunnies.png';
 
 const graphicNovelData = [
   {

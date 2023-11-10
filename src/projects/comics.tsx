@@ -1,6 +1,6 @@
-import rats from '@/images/rats.jpg';
-import llamas from '@/images/llamas.png';
-import nonsense from '@/images/nonsense_comics.png';
+import rats from '@/images/projects/comics/strips/rats.jpg';
+import llamas from '@/images/projects/comics/strips/llamas.png';
+import nonsense from '@/images/projects/comics/strips/nonsense_comics.png';
 
 
 const comicStripData = [
