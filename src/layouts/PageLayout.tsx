@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import styles from '../styles/PageLayout.module.css'
+import styles from '@/styles/PageLayout.module.css'
 import Link from 'next/link'
 import SocialLinks from '@/components/SocialLinks'
 import { Patrick_Hand } from 'next/font/google'

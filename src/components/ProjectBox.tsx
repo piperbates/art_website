@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import styles from '../styles/Project.module.css'
+import styles from '@/styles/Project.module.css'
 import { Patrick_Hand } from 'next/font/google';
 import Link from 'next/link';
 

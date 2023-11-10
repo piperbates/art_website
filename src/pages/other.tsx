@@ -1,9 +1,20 @@
-import PageLayout from '../layouts/PageLayout'
+import ProjectBox from '@/components/ProjectBox';
+import PageLayout from '@/layouts/PageLayout';
+import ProjectLayout from '@/layouts/ProjectLayout';
+import otherProjectData from '@/projects/other';
+import styles from '@/styles/ProjectLayout.module.css';
 
 const Other = () => {
   return (
     <PageLayout pageHeader='Other'>
-        Other
+      <div className={styles.projectIntro}>
+        Projects that don't fit into another category go here, I make a lot of random nonsense and it's gotta go somewhere!
+      </div>
+      <ProjectLayout>
+        {otherProjectData.map((project, i)=>{
+          return <ProjectBox project={project} key={i} />
+        })}
+        </ProjectLayout>
     </PageLayout>
   )
 }

@@ -1,4 +1,4 @@
-import styles from '../styles/ProjectLayout.module.css';
+import styles from '@/styles/ProjectLayout.module.css';
 
 const ProjectLayout = (
     {children}: {children: React.ReactNode}

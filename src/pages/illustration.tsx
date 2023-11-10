@@ -1,4 +1,4 @@
-import PageLayout from '../layouts/PageLayout'
+import PageLayout from '@/layouts/PageLayout'
 import ProjectLayout from '@/layouts/ProjectLayout';
 import styles from '@/styles/Page.module.css'
 

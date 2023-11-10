@@ -1,5 +1,5 @@
 import ProjectBox from '@/components/ProjectBox'
-import PageLayout from '../layouts/PageLayout'
+import PageLayout from '@/layouts/PageLayout'
 import ProjectLayout from '@/layouts/ProjectLayout'
 import styles from '@/styles/ProjectLayout.module.css'
 
