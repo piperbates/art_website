@@ -8,7 +8,7 @@ const Other = () => {
   return (
     <PageLayout pageHeader='Other'>
       <div className={styles.projectIntro}>
-        Projects that don't fit into another category go here, I make a lot of random nonsense and it's gotta go somewhere!
+        Projects that don&lsquo;t fit into another category go here, I make a lot of random nonsense and it&lsquo;s gotta go somewhere!
       </div>
       <ProjectLayout>
         {otherProjectData.map((project, i)=>{
