@@ -21,7 +21,7 @@ const Comics = () => {
       </div>
 
       <div className={styles.comicSubtitle}>
-        <h2 id="comic-strips">Comic Strips</h2>
+        <h2 id="comic-strips" className={styles.comicSubtitleTag}>Comic Strips</h2>
       </div>
 
       <ProjectLayout>
@@ -32,7 +32,7 @@ const Comics = () => {
       </ProjectLayout>
 
       <div className={styles.comicSubtitle}>
-        <h2 id="graphic-novel">Graphic Novels</h2>
+        <h2 id="graphic-novel" className={styles.comicSubtitleTag}>Graphic Novels</h2>
       </div>
 
       <ProjectLayout>

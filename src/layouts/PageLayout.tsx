@@ -18,14 +18,13 @@ const PageLayout = ({pageHeader, children}: {
 
     useEffect(()=>{
       const handleScrollButtonVisible = () => {
-        window.pageYOffset > 200 ? setShowButton(true) : setShowButton(false)
+        window.pageYOffset > 100 ? setShowButton(true) : setShowButton(false)
       };
 
       window.addEventListener('scroll', handleScrollButtonVisible);
       return () => {
         window.removeEventListener('scroll', handleScrollButtonVisible)
       }
-
     }, [])
     
     const onScrollClick = () => {
