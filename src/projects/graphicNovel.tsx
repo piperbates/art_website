@@ -35,7 +35,7 @@ const graphicNovelData = [
     imageDescription: "The cover of By Any Other Name, written and illustrated by Piper Strange.",
     description: "An autobiographical comic about my name change.",
     link: {
-      href: "https://tapas.io/series/Worry-is-a-Misuse-of-the-Imagination/info",
+      href: "https://tapas.io/series/By-Any-Other-Name-comic/info",
       linkText:  "Read it here"
   }
   },
@@ -46,7 +46,7 @@ const graphicNovelData = [
     imageDescription: "The cover of Misusing the Imagination, written and illustrated by Piper Strange.",
     description: "An autobiographical comic written during the aftermath of an abusive relationship. Contains themes of suicide, domestic violence, and trauma. ",
     link: {
-      href: "https://tapas.io/series/By-Any-Other-Name-comic/info",
+      href: "https://tapas.io/series/Worry-is-a-Misuse-of-the-Imagination/info",
       linkText:  "Read it here"
   }
   },

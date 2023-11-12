@@ -3,6 +3,7 @@ import styles from '@/styles/PageLayout.module.css'
 import Link from 'next/link'
 import SocialLinks from '@/components/SocialLinks'
 import { Patrick_Hand } from 'next/font/google'
+import HeadMetaTags from '@/components/HeadMetaTags'
 
 const phfont = Patrick_Hand({
   weight: ["400"],
@@ -46,6 +47,7 @@ const PageLayout = ({pageHeader, children}: {
     }
 
     return (<div className={styles.container}>
+      <HeadMetaTags />
       <div className={styles.headerBox}>
         <nav className={styles.navigation}>
           <button className={styles.toggleNavButton} onClick={() => setNavigationOpen(!navigationOpen)}>
