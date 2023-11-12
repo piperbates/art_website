@@ -40,11 +40,12 @@
 
 .projectIntro ul {
     margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .projectIntro li {
-    display: inline;
-    margin: 3px;
+    flex-direction: column;
    }
 
    .projectIntro li a {
