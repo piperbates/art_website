@@ -2,9 +2,31 @@
     display: none;
 }
 
+.soldOutText, .projectLinkText button {
+    text-decoration: underline;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    border: 0px;
+}
+
 .soldOutText {
     color: red;
-    text-decoration: underline;
+    background-color: var(--white);
+}
+
+.projectLinkText {
+    background-color: var(--pipers-blue);
+}
+
+.projectLinkText a {
+    color: var(--white);
+}
+
+.projectLinkText button:hover {
+    color: var(--pipers-black);
+    cursor: pointer;
 }
 
 .projectBox {

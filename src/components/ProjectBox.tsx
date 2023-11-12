@@ -11,7 +11,7 @@ const phfont = Patrick_Hand({
 const ProjectBox = ({project}: any) => {
 
     const displayText = () => {
-       return project.link ? <p><Link href={project.link.href} target='_blank'>{project.link.linkText}</Link></p>
+       return project.link ? <p className={styles.projectLinkText}><Link href={project.link.href} target='_blank'><button>{project.link.linkText}</button></Link></p>
                      : <p className={styles.soldOutText}>Sold out</p>
         
     }
