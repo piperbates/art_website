@@ -34,11 +34,32 @@
     list-style-type: none;
 }
 
-
 .comicSubtitleTag {
-    scroll-margin: 200px;
+    scroll-margin: 170px;
 }
 
+.projectIntro ul {
+    margin-top: 50px;
+}
+
+.projectIntro li {
+    display: inline;
+    margin: 3px;
+   }
+
+   .projectIntro li a {
+    width: 100%;
+    border: 1px solid var(--pipers-green);
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--pipers-black);
+   }
+
+   .projectIntro li a:hover {
+    background-color: var(--pipers-green);
+   }
 
 /* Mobile */
 @media (max-width: 700px) {
@@ -55,6 +76,12 @@
     .comicSubtitle {
         border-top: 0px;
     }
+
+    
+.comicSubtitleTag {
+    scroll-margin: 100px;
+}
+
     
 @keyframes projectSlide {
     0%   {left: -400px; top: 0px;}
@@ -97,6 +124,7 @@
         border-top: 0px;
         text-align: center;
         margin: 50px;
+        width: 100%;
     }
 
 
