@@ -13,7 +13,7 @@ const Tarot = () => {
         <ProjectLayout>
             <div className={styles.subProjectBox}>
                 {tarotCards.map((card, index)=>{
-                    return <div className={styles.subProjectImageWrapper}><Image src={card.image} alt={card.name} fill key={index} /></div>
+                    return <div className={styles.subProjectImageWrapper} key={index}><Image src={card.image} alt={card.name} fill key={index} /></div>
                 })}
             </div>
         </ProjectLayout>
