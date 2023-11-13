@@ -6,9 +6,6 @@ import facebook from '@/images/social-media-icons/facebook.png';
 import redbubble from '@/images/social-media-icons/redbubble.png';
 
 const SocialLinks = ({linkIsText}: {linkIsText?: boolean}) => {
-
-    console.log(linkIsText)
-
     const socials = [
         
         {
@@ -33,14 +30,12 @@ const SocialLinks = ({linkIsText}: {linkIsText?: boolean}) => {
         }
     ]
 
-    
-
 return <ul>
     {
         socials.map((item, index)=>{
             const linkDisplay = () => {
                 return linkIsText ? <span>{item.name}</span>
-                : <Image src={item.icon} alt={item.name} width="25" height="25" />
+                : <Image src={item.icon} alt={item.name} width="25" height="25" key={index} />
             }
             return (
             <li>
