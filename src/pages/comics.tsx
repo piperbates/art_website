@@ -1,10 +1,11 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import Link from 'next/link';
-import ProjectBox from '@/components/ProjectBox';
-import PageLayout from '@/layouts/PageLayout';
-import ProjectLayout from '@/layouts/ProjectLayout';
-import styles from '@/styles/ProjectLayout.module.css';
-import { comicStripData, graphicNovelData } from '@/projects/comics';
+import ProjectBox from '../components/ProjectBox';
+import PageLayout from '../layouts/PageLayout';
+import ProjectLayout from '../layouts/ProjectLayout';
+import styles from '../styles/ProjectLayout.module.css';
+import { comicStripData, graphicNovelData } from '../projects/comics';
 
 const Comics = () => {
   const sectionInfo = {

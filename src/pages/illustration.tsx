@@ -1,10 +1,11 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import Link from 'next/link';
-import PageLayout from '@/layouts/PageLayout';
-import ProjectLayout from '@/layouts/ProjectLayout';
-import styles from '@/styles/ProjectLayout.module.css';
-import { artData, tarotCards } from '@/projects/illustrations';
-import IllustrationBox from '@/components/IllustrationBox';
+import PageLayout from '../layouts/PageLayout';
+import ProjectLayout from '../layouts/ProjectLayout';
+import styles from '../styles/ProjectLayout.module.css';
+import { artData, tarotCards } from '../projects/illustrations';
+import IllustrationBox from '../components/IllustrationBox';
 
 const Illustration = () => {
   const sectionInfo = {

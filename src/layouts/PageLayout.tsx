@@ -1,11 +1,12 @@
+/* eslint-disable import/no-unresolved */
 import React, { useEffect, useState } from 'react';
-import styles from '@/styles/PageLayout.module.css';
 import Link from 'next/link';
-import phfont from '@/utils/phfont';
-import SocialLinks from '@/components/SocialLinks';
-import HeadMetaTags from '@/components/HeadMetaTags';
+import styles from '../styles/PageLayout.module.css';
+import phfont from '../utils/phfont';
+import SocialLinks from '../components/SocialLinks';
+import HeadMetaTags from '../components/HeadMetaTags';
 
-const PageLayout = ({pageHeader, children}: {
+const PageLayout = ({ pageHeader, children }: {
   pageHeader?: string, children: React.ReactNode
   }) => {
   const [navigationOpen, setNavigationOpen] = useState<boolean>(false);

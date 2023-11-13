@@ -20,6 +20,7 @@
     ],
     "rules": {
         "linebreak-style": "off",
-        "import/no-unresolved": [2, { "caseSensitiveStrict": false }]
+        "import/no-unresolved": [2, { "caseSensitiveStrict": false,  "caseSensitive": true }],
+        "import/extensions": [0, "ignorePackages" ]
     }
 }

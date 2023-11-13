@@ -1,6 +1,6 @@
-import invisibleGirl from '@/images/projects/other/invisible_girl.jpg';
-import castlesPodcast from '@/images/projects/other/podcast.png';
-import picrew from '@/images/projects/other/picrew.png';
+import invisibleGirl from '../images/projects/other/invisible_girl.jpg';
+import castlesPodcast from '../images/projects/other/podcast.png';
+import picrew from '../images/projects/other/picrew.png';
 
 interface otherProjectDataTypes {
     title: string,

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from '@/styles/Illustration.module.css';
+import styles from '../styles/Illustration.module.css';
 
 const IllustrationBox = ({ image }: any) => (
 <div className={styles.illustrationBox}>

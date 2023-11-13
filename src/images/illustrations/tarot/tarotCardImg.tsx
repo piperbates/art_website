@@ -7,7 +7,7 @@ import hierophant from './the-hierophant.png';
 import lovers from './the-lovers.png';
 import justice from './justice.png';
 import chariot from './the-chariot.png';
-import hermit from './the-hermit.png'
+import hermit from './the-hermit.png';
 import wheel from './the-wheel-of-fortune.png';
 import strength from './strength.png';
 import hangedMan from './the-hanged-man.png';
@@ -22,7 +22,28 @@ import judgement from './judgement.png';
 import world from './the-world.png';
 
 const tarotCardsImg = [
-    fool, magician, highPriestess, empress, emperor, hierophant, lovers, justice, chariot, hermit, wheel, strength, hangedMan, death, temperance, devil, tower, star, moon, sun, judgement, world
-]
+  fool,
+  magician,
+  highPriestess,
+  empress,
+  emperor,
+  hierophant,
+  lovers,
+  justice,
+  chariot,
+  hermit,
+  wheel,
+  strength,
+  hangedMan,
+  death,
+  temperance,
+  devil,
+  tower,
+  star,
+  moon,
+  sun,
+  judgement,
+  world,
+];
 
-export default tarotCardsImg
+export default tarotCardsImg;

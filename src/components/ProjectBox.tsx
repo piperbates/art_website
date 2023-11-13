@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '@/styles/Project.module.css';
-import phfont from '@/utils/phfont';
+import styles from '../styles/Project.module.css';
+// eslint-disable-next-line import/no-unresolved
+import phfont from '../utils/phfont';
 
 const ProjectBox = ({ project }: any) => {
   const displayText = project.link

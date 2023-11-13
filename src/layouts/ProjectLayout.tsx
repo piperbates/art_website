@@ -1,6 +1,7 @@
 import React from 'react';
-import styles from '@/styles/ProjectLayout.module.css';
-import phfont from '@/utils/phfont';
+import styles from '../styles/ProjectLayout.module.css';
+// eslint-disable-next-line import/no-unresolved
+import phfont from '../utils/phfont';
 
 interface projectInfoInterface {
     title: string,

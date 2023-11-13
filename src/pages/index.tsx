@@ -1,10 +1,11 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import Image from 'next/image';
-import styles from '@/styles/Page.module.css';
-import PageLayout from '@/layouts/PageLayout';
-import homeImg from '@/images/selfportrait.png';
-import bun from '@/images/bun.png';
-import phfont from '@/utils/phfont';
+import styles from '../styles/Page.module.css';
+import PageLayout from '../layouts/PageLayout';
+import homeImg from '../images/selfportrait.png';
+import bun from '../images/bun.png';
+import phfont from '../utils/phfont';
 
 const Home = () => (
     <PageLayout pageHeader='Piper Strange Art'>

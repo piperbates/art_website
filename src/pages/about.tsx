@@ -1,10 +1,11 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import Image from 'next/image';
-import phfont from '@/utils/phfont';
-import PageLayout from '@/layouts/PageLayout';
-import styles from '@/styles/Page.module.css'
-import mugshot from '@/images/mugshot.jpg';
-import SocialLinks from '@/components/SocialLinks';
+import phfont from '../utils/phfont';
+import PageLayout from '../layouts/PageLayout';
+import styles from '../styles/Page.module.css';
+import mugshot from '../images/mugshot.jpg';
+import SocialLinks from '../components/SocialLinks';
 
 const About = () => (
     <PageLayout pageHeader='About'>

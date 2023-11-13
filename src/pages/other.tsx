@@ -1,9 +1,10 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
-import ProjectBox from '@/components/ProjectBox';
-import PageLayout from '@/layouts/PageLayout';
-import ProjectLayout from '@/layouts/ProjectLayout';
-import otherProjectData from '@/projects/other';
-import styles from '@/styles/ProjectLayout.module.css';
+import ProjectBox from '../components/ProjectBox';
+import PageLayout from '../layouts/PageLayout';
+import ProjectLayout from '../layouts/ProjectLayout';
+import otherProjectData from '../projects/other';
+import styles from '../styles/ProjectLayout.module.css';
 
 const Other = () => (
     <PageLayout pageHeader='Other'>

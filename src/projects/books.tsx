@@ -1,8 +1,8 @@
-import princessElephant from '@/images/projects/books/princess_and_the_elephant.jpg';
-import bonePrincess from '@/images/projects/books/boneprincess.png';
-import llamas from '@/images//projects/books/llamas-book.png';
-import loveYouLots from '@/images/projects/books/loveyoulots.png';
-import loveLetters from '@/images/projects/books/loveletters.jpg';
+import princessElephant from '../images/projects/books/princess_and_the_elephant.jpg';
+import bonePrincess from '../images/projects/books/boneprincess.png';
+import llamas from '../images/projects/books/llamas-book.png';
+import loveYouLots from '../images/projects/books/loveyoulots.png';
+import loveLetters from '../images/projects/books/loveletters.jpg';
 
 interface bookDataTypes {
   title: string,
