@@ -24,7 +24,7 @@ const Home = () => {
           <div className={styles.introBox}>
           <h2 className={phfont.className}>Welcome to the world of Piper Strange</h2>
             <p>
-              Hello, welcome to my portfolio! I&apos;m Piper, a nonbinary illustrator and comic artist from the UK. I like to make things and then inflict them on people on the internet. 
+              Hello, welcome to my website! I&apos;m Piper, a nonbinary illustrator and comic artist from the UK. I like to make things and then inflict them on people on the internet. 
             </p>
           </div>
 

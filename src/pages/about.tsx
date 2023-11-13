@@ -4,6 +4,13 @@ import Image from 'next/image';
 
 import mugshot from '@/images/mugshot.jpg';
 import SocialLinks from '@/components/SocialLinks';
+import { Patrick_Hand } from 'next/font/google';
+
+
+const phfont = Patrick_Hand({
+  weight: ["400"],
+  subsets: ['latin'],
+})
 
 const About = () => {
   return (
@@ -14,6 +21,8 @@ const About = () => {
           <Image src={mugshot} alt="A photograph of Piper, a nonbinary person with blue hair" />
         </div>
 
+        <h1 className={phfont.className}>Who is this weirdo?</h1>
+
       <p>Piper Strange is a UK based illustrator and comic artist specialising in work with queer themes.​</p>
 
       <p>Piper has always been an imaginative and creative individual, and spent most of their childhood making up adventures and drawing pictures. After leaving school, they studied at Warwickshire College and achieved a BTEC National Diploma in Art and Design.</p>
@@ -22,9 +31,12 @@ const About = () => {
       
       <p>They now work as a Software Engineer and pursue their passion projects in their free time.</p>
 
-      <div className={styles.socialsBox}>
-        <SocialLinks />
-      </div>
+        <div className={styles.socialsBox}>
+          <h2 className={phfont.className}>
+            Find Piper elsewhere:
+          </h2>
+          <SocialLinks linkIsText />
+        </div>
       </div>
     </PageLayout>
   )

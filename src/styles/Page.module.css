@@ -6,6 +6,11 @@
   float: left;
 }
 
+.content h1, .socialsBox h2 {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
 .bottomImageContainer {
   margin: auto;
 }

@@ -16,10 +16,6 @@
     background-color: var(--white);
 }
 
-.projectLinkText {
-    background-color: var(--pipers-blue);
-}
-
 .projectLinkText a {
     color: var(--white);
 }
