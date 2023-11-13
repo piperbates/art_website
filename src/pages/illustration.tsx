@@ -32,11 +32,12 @@ const Illustration = () => {
       </ProjectLayout>
 
       <ProjectLayout pageInfo={sectionInfo.tarot}>
-                {tarotCards.map((card, i) => <IllustrationBox image={card} key={i} />)}
+                {tarotCards.map((card, i) => <IllustrationBox image={ card} key={i} />)}
         </ProjectLayout>
 
         <div className={styles.projectOutro}>
-      <p>For more illustrations, including work in progress shots, check out my <Link href="http://www.instagram.com/piperstrangeart" target="_blank">Instagram</Link></p>
+      <p>For more illustrations, including work in progress shots, check out my
+        <Link href="http://www.instagram.com/piperstrangeart" target="_blank">Instagram</Link></p>
       </div>
 
     </PageLayout>

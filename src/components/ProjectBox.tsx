@@ -1,21 +1,13 @@
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '../styles/Project.module.css';
-// eslint-disable-next-line import/no-unresolved
 import phfont from '../utils/phfont';
+import { bookDataTypes } from '../projects/books';
 
 interface props {
-  project: {
-    title: string,
-    link: {
-      href: string,
-      linkText: string
-    },
-    image: string,
-    imageDescription: string,
-    description: string
-  }
+  project: bookDataTypes
 }
 
 const ProjectBox = ({ project }: props) => {

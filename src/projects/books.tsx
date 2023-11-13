@@ -4,7 +4,7 @@ import llamas from '../images/projects/books/llamas-book.png';
 import loveYouLots from '../images/projects/books/loveyoulots.png';
 import loveLetters from '../images/projects/books/loveletters.jpg';
 
-interface bookDataTypes {
+export interface bookDataTypes {
   title: string,
   image: string,
   imageDescription: string,
@@ -12,7 +12,7 @@ interface bookDataTypes {
   link?: {href: string, linkText: string}
 }
 
-const bookData: bookDataTypes[] = [
+export const bookData: bookDataTypes[] = [
   {
     title: 'The Princess and the Elephant',
     image: princessElephant.src,
@@ -52,5 +52,3 @@ const bookData: bookDataTypes[] = [
     description: 'A collection of poems about relationships, some dark and traumatic, some beautiful. Written in the aftermath of an abusive relationship, these poems explore loneliness, grief, and trauma.',
   },
 ];
-
-export default bookData;

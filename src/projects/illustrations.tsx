@@ -35,13 +35,7 @@ import sun from '../images/illustrations/tarot/the-sun.png';
 import judgement from '../images/illustrations/tarot/judgement.png';
 import world from '../images/illustrations/tarot/the-world.png';
 
-interface tarotCardsTypes {
-    name: string,
-    number: number,
-    image: string,
-  }
-
-interface artDataTypes {
+export interface artDataTypes {
   image: string,
   imageDescription: string,
 }
@@ -105,115 +99,94 @@ export const artData: artDataTypes[] = [
   },
 ];
 
-export const tarotCards: tarotCardsTypes[] = [
+export const tarotCards: artDataTypes[] = [
   {
-    name: 'The Fool',
-    number: 0,
     image: fool.src,
+    imageDescription: 'The Fool Tarot Card',
   },
   {
-    name: 'The Magician',
-    number: 1,
     image: magician.src,
+    imageDescription: 'The Magician Tarot Card',
+
   },
   {
-    name: 'The High Priestess',
-    number: 2,
     image: highPriestess.src,
+    imageDescription: 'The High Priestess Tarot Card',
   },
   {
-    name: 'The Empress',
-    number: 3,
     image: empress.src,
+    imageDescription: 'The Empress Tarot Card',
   },
   {
-    name: 'The Emperor',
-    number: 4,
     image: emperor.src,
+    imageDescription: 'The Emperor Tarot Card',
   },
   {
-    name: 'The Hierophant',
-    number: 5,
     image: hierophant.src,
+    imageDescription: 'The Hierophant Tarot Card',
   },
   {
-    name: 'The Lovers',
-    number: 6,
     image: lovers.src,
+    imageDescription: 'The Lovers Tarot Card',
   },
   {
-    name: 'The Chariot',
-    number: 7,
     image: chariot.src,
+    imageDescription: 'The Chariot Tarot Card',
   },
   {
-    name: 'Justice',
-    number: 8,
     image: justice.src,
+    imageDescription: 'Justice Tarot Card',
   },
   {
-    name: 'The Hermit',
-    number: 9,
     image: hermit.src,
+    imageDescription: 'The Hermit Tarot Card',
   },
   {
-    name: 'The Wheel of Fortune',
-    number: 10,
     image: wheel.src,
+    imageDescription: 'The Wheel of Fortune',
   },
   {
-    name: 'Strength',
-    number: 11,
     image: strength.src,
+    imageDescription: 'Strength Tarot Card',
   },
   {
-    name: 'The Hanged Man',
-    number: 12,
     image: hangedMan.src,
+    imageDescription: 'The Hanged Man Tarot Card',
   },
   {
-    name: 'Death',
-    number: 13,
     image: death.src,
+    imageDescription: 'Death Tarot Card',
   },
   {
-    name: 'Temperance',
-    number: 14,
     image: temperance.src,
+    imageDescription: 'Temperance Tarot Card',
   },
   {
-    name: 'The Devil',
-    number: 15,
     image: devil.src,
+    imageDescription: 'The Devil Tarot Card',
   },
   {
-    name: 'The Tower',
-    number: 16,
     image: tower.src,
+    imageDescription: 'The Tower Tarot Card',
   },
   {
-    name: 'The Star',
-    number: 17,
     image: star.src,
+    imageDescription: 'The Star Tarot Card',
   },
   {
-    name: 'The Moon',
-    number: 18,
     image: moon.src,
+    imageDescription: 'The Moon Tarot Card',
   },
   {
-    name: 'The Sun',
-    number: 19,
     image: sun.src,
+    imageDescription: 'The Sun Tarot Card',
   },
   {
-    name: 'Judgement',
-    number: 20,
     image: judgement.src,
+    imageDescription: 'Judgement Tarot Card',
   },
   {
-    name: 'The World',
-    number: 21,
     image: world.src,
+    imageDescription: 'The World Tarot Card',
   },
 ];

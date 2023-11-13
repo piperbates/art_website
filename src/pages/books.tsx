@@ -3,7 +3,7 @@ import React from 'react';
 import ProjectLayout from '../layouts/ProjectLayout';
 import PageLayout from '../layouts/PageLayout';
 import ProjectBox from '../components/ProjectBox';
-import bookData from '../projects/books';
+import { bookData } from '../projects/books';
 import styles from '../styles/ProjectLayout.module.css';
 
 const Books = () => (
