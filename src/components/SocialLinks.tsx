@@ -34,7 +34,7 @@ return <ul>
     {
         socials.map((item, index)=>{
             const linkDisplay = () => {
-                return linkIsText ? <span>{item.name}</span>
+                return linkIsText ? <span key={index}>{item.name}</span>
                 : <Image src={item.icon} alt={item.name} width="25" height="25" key={index} />
             }
             return (
