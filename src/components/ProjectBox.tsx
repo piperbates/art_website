@@ -5,7 +5,20 @@ import styles from '../styles/Project.module.css';
 // eslint-disable-next-line import/no-unresolved
 import phfont from '../utils/phfont';
 
-const ProjectBox = ({ project }: any) => {
+interface props {
+  project: {
+    title: string,
+    link: {
+      href: string,
+      linkText: string
+    },
+    image: string,
+    imageDescription: string,
+    description: string
+  }
+}
+
+const ProjectBox = ({ project }: props) => {
   const displayText = project.link
     ? <p className={styles.projectLinkText}><Link href={project.link.href} target='_blank'><button>{project.link.linkText}</button></Link></p>
     : <p className={styles.soldOutText}>Sold out</p>;
