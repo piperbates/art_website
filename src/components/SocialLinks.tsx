@@ -38,7 +38,7 @@ return <ul>
                 : <Image src={item.icon} alt={item.name} width="25" height="25" key={index} />
             }
             return (
-            <li>
+            <li key={index}>
                 <Link href={item.href} target='_blank' key={index}>
                     {linkDisplay()}
                 </Link>
