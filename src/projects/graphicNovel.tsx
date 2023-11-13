@@ -6,7 +6,15 @@ import nameComic from '@/images//projects/comics/graphic-novels/name-comic.jpg';
 import ppgvsbm from '@/images//projects/comics/graphic-novels/ppgvsbm.png';
 import spaceBunnies from '@/images//projects/comics/graphic-novels/space_bunnies.png';
 
-const graphicNovelData = [
+interface graphicNovelDataTypes {
+  title: String,
+  image: String,
+  imageDescription: String,
+  description: String,
+  link?: {href: String, linkText: String}
+}
+
+const graphicNovelData: graphicNovelDataTypes[] = [
   {
     title: "In Pursuit of Magic",
     image: pursuitMagic.src,

@@ -62,6 +62,24 @@
     background-color: var(--pipers-green);
    }
 
+   
+.subProjectBox {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.subProjectImageWrapper {
+    width: 500px;
+    height: 833px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.subProjectImageWrapper img {
+    object-fit: contain;
+}
+
 /* Mobile */
 @media (max-width: 700px) {
 
@@ -81,6 +99,13 @@
     
 .comicSubtitleTag {
     scroll-margin: 100px;
+}
+
+.subProjectImageWrapper {
+    width: 200px;
+    height: 333px;
+    margin: 0 auto 30px;
+    position: relative;
 }
 
     

@@ -2,8 +2,16 @@ import rats from '@/images/projects/comics/strips/rats.jpg';
 import llamas from '@/images/projects/comics/strips/llamas.png';
 import nonsense from '@/images/projects/comics/strips/nonsense_comics.png';
 
+interface comicStripDataTypes {
+  title: String,
+  image: String,
+  imageDescription: String,
+  description: String,
+  link?: {href: String, linkText: String}
+}
 
-const comicStripData = [
+
+const comicStripData: comicStripDataTypes[] = [
   {
     title: "Here Come the Rats",
     image: rats.src,

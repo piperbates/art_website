@@ -4,7 +4,16 @@ import llamas from '@/images//projects/books/llamas-book.png'
 import loveYouLots from '@/images/projects/books/loveyoulots.png'
 import loveLetters from '@/images/projects/books/loveletters.jpg'
 
-const bookData = [
+interface bookDataTypes {
+  title: String,
+  image: String,
+  imageDescription: String,
+  description: String,
+  link?: {href: String, linkText: String}
+}
+
+
+const bookData: bookDataTypes[] = [
     {
       title: "The Princess and the Elephant",
       image: princessElephant.src,

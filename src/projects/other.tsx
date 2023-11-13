@@ -2,7 +2,15 @@ import invisibleGirl from '@/images/projects/other/invisible_girl.jpg';
 import castlesPodcast from '@/images/projects/other/podcast.png';
 import picrew from '@/images/projects/other/picrew.png';
 
-const otherProjectData = [
+interface otherProjectDataTypes {
+    title: String,
+    image: String,
+    imageDescription: String,
+    description: String,
+    link?: {href: String, linkText: String}
+}
+
+const otherProjectData: otherProjectDataTypes[] = [
     {
       title: "The Invisible Girl - EP",
       image: invisibleGirl.src,
