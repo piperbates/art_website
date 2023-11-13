@@ -1,22 +1,20 @@
-import PageLayout from '@/layouts/PageLayout'
+import React from 'react';
+import Link from 'next/link';
+import PageLayout from '@/layouts/PageLayout';
 import ProjectLayout from '@/layouts/ProjectLayout';
-import styles from '@/styles/ProjectLayout.module.css'
-
+import styles from '@/styles/ProjectLayout.module.css';
 import { artData, tarotCards } from '@/projects/illustrations';
 import IllustrationBox from '@/components/IllustrationBox';
-import Link from 'next/link';
-import Image from 'next/image';
 
 const Illustration = () => {
-
   const sectionInfo = {
     standAlone: {
-    title: "Stand Alone Illustrations", id: "stand-alone"
-  },
-  tarot: {
-    title: "Tarot Cards", id: "tarot-cards"
-  },
-}
+      title: 'Stand Alone Illustrations', id: 'stand-alone',
+    },
+    tarot: {
+      title: 'Tarot Cards', id: 'tarot-cards',
+    },
+  };
 
   return (
     <PageLayout pageHeader='Illustration'>
@@ -29,15 +27,11 @@ const Illustration = () => {
         </div>
 
       <ProjectLayout pageInfo={sectionInfo.standAlone}>
-      {artData.map((art, i)=>{
-          return <IllustrationBox image={art} key={i} />
-        })}
+      {artData.map((art, i) => <IllustrationBox image={art} key={i} />)}
       </ProjectLayout>
 
       <ProjectLayout pageInfo={sectionInfo.tarot}>
-                {tarotCards.map((card, i)=>{
-                    return <IllustrationBox image={card} key={i} />
-                })}
+                {tarotCards.map((card, i) => <IllustrationBox image={card} key={i} />)}
         </ProjectLayout>
 
         <div className={styles.projectOutro}>
@@ -45,7 +39,7 @@ const Illustration = () => {
       </div>
 
     </PageLayout>
-  )
-}
+  );
+};
 
-export default Illustration
+export default Illustration;

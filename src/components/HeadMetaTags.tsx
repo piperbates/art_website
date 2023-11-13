@@ -1,11 +1,10 @@
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
 
-const HeadMetaTags = () => {
-    return (
+const HeadMetaTags = () => (
         <Head>
           <link rel="icon" href="/favicon.ico" />
       </Head>
-    )
-}
+);
 
 export default HeadMetaTags;
