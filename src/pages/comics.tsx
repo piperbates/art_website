@@ -3,39 +3,40 @@ import PageLayout from '@/layouts/PageLayout'
 import ProjectLayout from '@/layouts/ProjectLayout'
 import styles from '@/styles/ProjectLayout.module.css'
 
-import comicStripData from '@/projects/comics';
-import graphicNovelData from '@/projects/graphicNovel';
+import { comicStripData, graphicNovelData } from '@/projects/comics';
 import Link from 'next/link';
 
-const Comics = () => {
+import phfont from '@/utils/phfont';
 
-  
+
+const Comics = () => {
+  const sectionInfo = {
+    strips: {
+    title: "Comic Strips", id: "comic-strips"
+  },
+  graphicNovels: {
+    title: "Graphic Novels", id: "graphic-novels"
+  }
+}
+
   return (
     <PageLayout pageHeader='Comics'>
       <div className={styles.projectIntro}>
         <p>My comics can be split into two different categories: Comic Strips and Graphic Novels. Click on the links below to be taken to the section you&apos;re most interested in.</p>
         <ul>
-          <li><Link href="#comic-strips">Comic Strips</Link></li>
-          <li><Link href="#graphic-novel">Graphic Novel</Link></li>
+        <li><Link href={`#${sectionInfo.strips.id}`}>{sectionInfo.strips.title}</Link></li>
+        <li><Link href={`#${sectionInfo.graphicNovels.id}`}>{sectionInfo.graphicNovels.title}</Link></li>
         </ul>
       </div>
 
-      <div className={styles.comicSubtitle}>
-        <h2 id="comic-strips" className={styles.comicSubtitleTag}>Comic Strips</h2>
-      </div>
-
-      <ProjectLayout>
+      <ProjectLayout pageInfo={sectionInfo.strips}>
       {comicStripData.map((comic, i)=>{
           return <ProjectBox project={comic} key={i} />
         })}
         
       </ProjectLayout>
 
-      <div className={styles.comicSubtitle}>
-        <h2 id="graphic-novel" className={styles.comicSubtitleTag}>Graphic Novels</h2>
-      </div>
-
-      <ProjectLayout>
+      <ProjectLayout pageInfo={sectionInfo.graphicNovels}>
       {graphicNovelData.map((graphicNovel, i)=>{
           return <ProjectBox project={graphicNovel} key={i} />
         })}

@@ -1,12 +1,7 @@
 import Image from 'next/image';
 import styles from '@/styles/Project.module.css'
-import { Patrick_Hand } from 'next/font/google';
 import Link from 'next/link';
-
-const phfont = Patrick_Hand({
-    weight: ["400"],
-    subsets: ['latin'],
-  })
+import phfont from '@/utils/phfont';
 
 const ProjectBox = ({project}: any) => {
 

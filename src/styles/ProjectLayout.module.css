@@ -16,7 +16,7 @@
     font-size: 1.2em;
 }
 
-.comicSubtitle {
+.projectSubtitle {
     width: 70%;
     margin: 50px auto 0px;
     padding-top: 50px;
@@ -34,18 +34,20 @@
     list-style-type: none;
 }
 
-.comicSubtitleTag {
+.projectSubtitleTag {
     scroll-margin: 170px;
 }
 
 .projectIntro ul {
     margin-top: 50px;
-    display: flex;
     justify-content: space-around;
+    flex-flow:wrap;
+    display: flex;
 }
 
 .projectIntro li {
-    flex-direction: column;
+    display: inline-flex;
+    margin: 5px;
    }
 
    .projectIntro li a {
@@ -92,12 +94,12 @@
         font-size: small;
     }
 
-    .comicSubtitle {
+    .projectSubtitle {
         border-top: 0px;
     }
 
     
-.comicSubtitleTag {
+.projectSubtitleTag {
     scroll-margin: 100px;
 }
 
@@ -146,7 +148,7 @@
         margin-bottom: 100px;
     }
 
-    .comicSubtitle {
+    .projectSubtitle {
         border-top: 0px;
         text-align: center;
         margin: 50px;
