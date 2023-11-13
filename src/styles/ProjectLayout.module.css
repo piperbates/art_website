@@ -1,3 +1,7 @@
+.projectWrapper {
+    width: 100%;
+}
+
 .projectGallery {
     position: relative;
     width: 100%;
@@ -128,15 +132,15 @@
 
     .projectIntro, .projectOutro {
         font-size: large;
-        width: 100%;
+        width: 70%;
     }
 
     .projectGallery {
     animation-name: projectSlide;
     animation-duration: 4s;
     animation-iteration-count: 1;
-    display: block;
     margin: auto;
+    border: 1px solid red;
     }
     
     .projectIntro {

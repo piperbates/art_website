@@ -58,6 +58,8 @@
 
 .socialsBox li {
   display: inline;
+  text-align: left;
+  margin-bottom: 8px;
 }
 
 .socialsBox li:not(:last-child) {
@@ -124,6 +126,10 @@
 
   .bottomImageContainer {
     top: 50px;
+  }
+
+  .socialsBox li {
+    display: block;
   }
   
   @keyframes imgSlide {

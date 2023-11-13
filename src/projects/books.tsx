@@ -25,7 +25,7 @@ export const bookData: bookDataTypes[] = [
   },
 
   {
-    title: 'The Bone Princesss',
+    title: 'The Bone Princess',
     image: bonePrincess.src,
     imageDescription: 'The cover of The Bone Princess, written and illustrated by Piper Strange',
     description: 'In a graveyard, in the underworld, there lives a princess. This is the story of how this princess falls in love with the living. A story about grief, and death. A beautiful, chilling, illustrated short story by author and illustrator Piper Strange.',

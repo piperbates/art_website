@@ -28,7 +28,7 @@ const Illustration = () => {
         </div>
 
       <ProjectLayout pageInfo={sectionInfo.standAlone}>
-      {artData.map((art, i) => <IllustrationBox image={art} key={i} />)}
+        {artData.map((art, i) => <IllustrationBox image={art} key={i} />)}
       </ProjectLayout>
 
       <ProjectLayout pageInfo={sectionInfo.tarot}>

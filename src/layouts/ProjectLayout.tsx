@@ -22,7 +22,7 @@ const ProjectLayout = (
     : null;
 
   return (
-        <div>
+        <div className={styles.projectWrapper}>
             {projectTitleDisplay}
             <div className={styles.projectGallery}>
                 {children}
