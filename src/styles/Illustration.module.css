@@ -1,0 +1,38 @@
+.illustrationBox {
+    position: relative;
+    margin: 20px;
+}
+
+.illustrationBox img {
+    position: relative;
+    object-fit: contain;
+}
+
+.illustrationWrapper {
+    min-width: 500px; min-height: 500px;
+}
+
+/* Tablets */
+
+@media (min-width: 701px) and (max-width: 1120px) {
+
+    .illustrationWrapper {
+        min-width: 300px; min-height: 300px;
+    }
+    
+    .illustrationBox {
+        margin: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .illustrationWrapper {
+        min-width: 300px; min-height: 300px;
+    }
+
+    .illustrationBox {
+        margin: 10px;
+    }
+}

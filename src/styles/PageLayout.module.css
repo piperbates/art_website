@@ -1,52 +1,179 @@
-
-.container {
+ /* Generic styling */
+  .container {
     color: black;
-    height: 100vh;
 }
 
+.headerBox {
+    animation-name: headerSlide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    background-color: var(--pipers-green);
+    position: fixed; top: 0px;
+    width: 100%;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+    text-align: center;
+
+  }
+
+  .header h1 {
+    color: var(--pipers-black);
+    text-shadow: 1px 1px 3px var(--white);
+    font-size: 8vmin; 
+
+  }
+
+  .socialsList {
+    display: none;
+  }
+
+  .navigationList li {
+    display: inline;
+    font-size: 4vmin; 
+    padding: 10px;
+  }
+
+  .navigationList li a:hover  {
+    color: var(--white);
+  }
+
+  .headerBox {
+    display: flex;
+    flex-direction: column-reverse;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+  }
+
+.topScrollButton {
+ position: fixed;
+ bottom: 50px;
+ right:  8px;  
+ width: 50px;
+ height: 50px;
+ background-color: var(--white);
+ border-radius: 50%;
+ border: 0px;
+}
+
+.topScrollButton:hover {
+    background-color: var(--pipers-green);
+}
+
+
 .toggleNavButton {
+    background-color: var(--white);
+    border: 1px solid var(--pipers-blue);
     display: none;
 }
 
+.mainContent {
+    width: 70%;
+    margin: 170px auto;
+}
+
+  .navigation a {
+    color: var(--pipers-blue)
+}
+
+.navigation a:hover {
+    color: var(--pipers-green);
+    text-decoration: none;
+}
+
+  .footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--pipers-blue);
+    box-shadow: 3px 3px 10px var(--pipers-green);
+    position: fixed; 
+    bottom: 0px;
+   }
+
+   .footer li {
+    display: inline;
+    padding: 10px;
+   }
+
+   .footer a {
+    color: var(--pipers-green)
+   }
+
+   @keyframes headerSlide {
+    0%   {left: 0px; top: -100px;}
+    25%  {left: 0px; top: 0px;}
+  }
+
+
+
+
 /* Mobile */
 @media (max-width: 700px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 8vmin; 
+
+    }
+
+    .headerBox {
+        display: block;
+        z-index: 5;
+        max-height: 75px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: left;
+    }
 
     .displayNav {
         display: block;
-        animation: 3s infinite alternate slidein;
-    }
-
-    .navigation {
-    } 
-
-    .navigation a {
-        color: var(--white)
     }
 
     .toggleNavButton {
         width: 50px;
         height: 50px;
-        background-color: var(--white);
         display: block;
-        border: 1px solid var(--pipers-blue);
         border-radius: 100px;
-        position: absolute;
-        right: 0px;
         z-index: 11;
+        position: fixed;
+        right: 0px;
+        margin: 10px;
     }
+
+    .toggleNavButton:hover {
+        background-color: aliceblue;
+    }
+
+    .burger1, .burger2, .burger3 {
+        height: 10px;
+        padding: 0px;
+        margin: 0px;
+        border-top: 2px solid black;
+        width: 25px;
+        margin: auto;
+    }
+
+    .burger1 {
+        margin-top: 5px;
+    }   
 
     .closeNav {
         display: none;
     }
 
     .navigationBox {
-        position: absolute;
+        position: fixed;
         width: 100%;
         z-index: 10;
         height: 100%;
         text-align: center;
         background-color: var(--pipers-black);
-
+        animation-name: navigationSlide;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
     }
 
     .navigationList li {
@@ -59,13 +186,6 @@
     .navigationList li a {
         padding: 16px;
     }
-    
-    .imageContainer {
-        width: 250px;
-        height: 443px;
-        position: absolute;
-        bottom: 0px;
-   }
 
    .socialsList {
     width: 100%;
@@ -73,21 +193,163 @@
     bottom: 20px;
     z-index: 20;
     color: var(--white);
+        display: block;
+   }
+
+   .socialsList li {
+    display: inline;
    }
 
    .socialsList li a {
-    display: inline;
     font-size: small;
     padding-left: 20px;
    }
+
+   .mainContent {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: visible;
+    margin: 100px 0;
+    flex-direction: column;
+   }
+
+   .footer {
+    position: fixed;
+    bottom: 0px;
+   }
+      
+   @keyframes navigationSlide {
+    0%   {left: 500px; top: 0px;}
+    25%  {left: 0px; top: 0px;}
+  }
 }
-   
-  
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
-    .container {
+@media (min-width: 701px) and (max-width: 1120px) 
+{
 
-
+    .socialsList {
+        display: block;
     }
+
+    .mainContent {
+        width: 100%;
+        margin-top:200px;
+        flex-direction: column;
+    }
+
+    .headerBox {
+        display: block;
+        text-align: left;
+        min-height: 100px;
+        z-index: 5;
+    }
+
+    .headerBox h1 {
+        font-size: 10vmin; 
+        margin: 10px;
+    }
+
+    .navigationBox {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+        height: 100%;
+        text-align: center;
+        background-color: var(--pipers-black);
+        animation-name: navigationSlide;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+
+    .navigationList li {
+        position: relative;
+        top: 100px;
+        display: grid;
+        font-size: x-large;
+    }
+
+    .navigation li {
+        display: block;
+        margin: 50px;
+    }
+
+    .toggleNavButton {
+        width: 75px;
+        height: 75px;
+        display: block;
+        border-radius: 100px;
+        position: fixed;
+        right: 5px;
+        top: 12px;
+        margin: 10px;
+        z-index: 11;
+    }
+
+    .burger1, .burger2, .burger3 {
+        height: 10px;
+        padding: 0px;
+        margin: 0px;
+        border-top: 2px solid black;
+        width: 25px;
+        margin: auto;
+    }
+
+    .burger1 {
+        margin-top: 5px;
+    }
+
+    .socialsList {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    .socialsList li {
+        display: inline;
+       }
+
+    .displayNav {
+        display: block;
+    }
+    
+    .closeNav {
+        display: none;
+    }
+
+    .navigationBox {
+        animation-name: navigationSlide;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+
+
+    @keyframes navigationSlide {
+        0%   {left: 500px; top: 0px;}
+        25%  {left: 0px; top: 0px;}
+      }
+
+    .topScrollButton {
+        width: 100px;
+        height: 100px;
+        font-size: x-large;
+        bottom: 100px;
+    }
+
+    .footer {
+        position: relative;
+        width: 100%;
+        height: 75px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: large;
+    }
+
+    .footer li {
+        display: inline;
+        margin: 20px;
+    }
+    
 }

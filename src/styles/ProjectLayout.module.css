@@ -1,0 +1,167 @@
+.projectWrapper {
+    width: 100%;
+}
+
+.projectGallery {
+    position: relative;
+    width: 100%;
+    animation-name: projectSlide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 51%;
+    justify-content: center;
+}
+
+.projectIntro, .projectOutro {
+    margin: auto;
+    width: 800px;
+    font-size: 1.2em;
+}
+
+.projectSubtitle {
+    width: 70%;
+    margin: 50px auto 0px;
+    padding-top: 50px;
+    border-top: 1px solid white;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.projectOutro {
+    margin-bottom: 150px;
+}
+
+.projectIntro li {
+    list-style-type: none;
+}
+
+.projectSubtitleTag {
+    scroll-margin: 170px;
+}
+
+.projectIntro ul {
+    margin-top: 50px;
+    justify-content: space-around;
+    flex-flow:wrap;
+    display: flex;
+}
+
+.projectIntro li {
+    display: inline-flex;
+    margin: 5px;
+   }
+
+   .projectIntro li a {
+    width: 100%;
+    border: 1px solid var(--pipers-green);
+    border-radius: 10px;
+    padding: 20px;
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--pipers-black);
+   }
+
+   .projectIntro li a:hover {
+    background-color: var(--pipers-green);
+   }
+
+   
+.subProjectBox {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.subProjectImageWrapper {
+    width: 500px;
+    height: 833px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.subProjectImageWrapper img {
+    object-fit: contain;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .projectGallery {
+        display: block;
+    }
+
+    .projectIntro, .projectOutro {
+        width: 300px;
+        font-size: small;
+    }
+
+    .projectSubtitle {
+        border-top: 0px;
+    }
+
+    
+.projectSubtitleTag {
+    scroll-margin: 100px;
+}
+
+.subProjectImageWrapper {
+    width: 200px;
+    height: 333px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+
+    
+@keyframes projectSlide {
+    0%   {left: -400px; top: 0px;}
+    25%  {left: 0px; top: 0px;}
+  }
+
+}
+
+/* Tablets */
+
+@media (min-width: 701px) and (max-width: 1120px) {
+
+    .projectGallery {
+        width: 500px;
+    }
+
+    .projectIntro, .projectOutro {
+        font-size: large;
+        width: 70%;
+    }
+
+    .projectGallery {
+    animation-name: projectSlide;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    margin: auto;
+    }
+    
+    .projectIntro {
+        margin-top: 100px;
+        margin-bottom: 30px;;
+    }
+
+    .projectOutro {
+        margin-bottom: 100px;
+    }
+
+    .projectSubtitle {
+        border-top: 0px;
+        text-align: center;
+        margin: 50px;
+        width: 100%;
+    }
+
+
+    @keyframes projectSlide {
+        0%   {left: -400px; top: 0px;}
+        25%  {left: 0px; top: 0px;}
+      }
+
+}
