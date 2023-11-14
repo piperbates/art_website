@@ -26,21 +26,19 @@ const Home = () => (
 
           <h2 className={phfont.className}>News</h2>
           <div className={styles.newsBox}>
-          <span className={styles.newsDate}>06th November 2023</span>
-              <p>I&apos;m currently building This Website! Gosh!</p>
+          <span className={styles.newsDate}>14th November 2023</span>
               <p>
-                Actually something a little bit exciting is happening,
-                I&apos;m in the process of republishing all my books,
-                which is kind of why this website is necessary.
-                I mean, it&apos;s not <em>completely</em> necessary,
-                because most illustrator / author types don&apos;t have websites,
-                they just have a thrown together Wix page but those are <em>boring</em>,
-                I want weird websites with rambling news sections, and since my
-                &ldquo;Real Job&ldquo; TM is a software engineer I figured why
-                not build it myself?
+                Something a little bit exciting is happening,
+                I&apos;m in the process of republishing all my books!
+                They&apos;ve been sold out for a while since I needed
+                to edit the heck out of them for the new edition and I
+                couldn&apos;t find the time to do it... Well I made the
+                time and now they should be ready to be republished as soon
+                as the final files are, err, finalised, ETA some time in
+                the new year!
               </p>
               <p>
-                So yes that&apos;s why this website exists. Now you know!
+                And that&apos;s <em>exciting!!</em>
               </p>
               <p>Piper x</p>
           </div>
