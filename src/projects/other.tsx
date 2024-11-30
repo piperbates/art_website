@@ -3,11 +3,11 @@ import castlesPodcast from '../images/projects/other/podcast.png';
 import picrew from '../images/projects/other/picrew.png';
 
 interface otherProjectDataTypes {
-    title: string,
-    image: string,
-    imageDescription: string,
-    description: string,
-    link?: {href: string, linkText: string}
+  title: string,
+  image: string,
+  imageDescription: string,
+  description: string,
+  link?: { href: string, linkText: string }
 }
 
 const otherProjectData: otherProjectDataTypes[] = [

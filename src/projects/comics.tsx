@@ -14,7 +14,7 @@ interface comicStripDataTypes {
   image: string,
   imageDescription: string,
   description: string,
-  link?: {href: string, linkText: string}
+  link?: { href: string, linkText: string }
 }
 
 interface graphicNovelDataTypes {
@@ -22,7 +22,7 @@ interface graphicNovelDataTypes {
   image: string,
   imageDescription: string,
   description: string,
-  link?: {href: string, linkText: string}
+  link?: { href: string, linkText: string }
 }
 
 export const comicStripData: comicStripDataTypes[] = [
@@ -32,8 +32,8 @@ export const comicStripData: comicStripDataTypes[] = [
     imageDescription: "An illustration hooded rat, with the caption 'I will pee on everything you love'",
     description: "Rat comics! I started to draw these inspired by my own pet rats, and the mischief they'd get up to.",
     link: {
-      href: 'https://www.instagram.com/piperstrangecomics/',
-      linkText: 'View on Instagram',
+      href: 'https://www.instagram.com/piperstrangeart/',
+      linkText: 'Find them here',
     },
   },
   {
