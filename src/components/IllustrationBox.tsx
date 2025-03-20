@@ -9,7 +9,7 @@ interface props {
 }
 
 const IllustrationBox = ({ image }: props) => (
-<div className={styles.illustrationBox}>
+  <div className={styles.illustrationBox}>
     <div className={styles.illustrationWrapper}>
       <Image src={image.image} alt={image.imageDescription} fill />
     </div>

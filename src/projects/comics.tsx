@@ -3,9 +3,6 @@ import llamas from '../images/projects/comics/strips/llamas.png';
 import nonsense from '../images/projects/comics/strips/nonsense_comics.png';
 import lib from '../images/projects/comics/graphic-novels/life_is_beautiful.png';
 import pursuitMagic from '../images/projects/comics/graphic-novels/pursuitmagic.jpg';
-import scienceRats from '../images/projects/comics/graphic-novels/science-rats.png';
-import worryComic from '../images/projects/comics/graphic-novels/worry-comic.png';
-import nameComic from '../images/projects/comics/graphic-novels/name-comic.jpg';
 import ppgvsbm from '../images/projects/comics/graphic-novels/ppgvsbm.png';
 import spaceBunnies from '../images/projects/comics/graphic-novels/space_bunnies.png';
 
@@ -68,40 +65,6 @@ export const graphicNovelData: graphicNovelDataTypes[] = [
       linkText: 'Read the story here',
     },
   },
-
-  {
-    title: 'SCIENCE RATS',
-    image: scienceRats.src,
-    imageDescription: 'The cover of SCIENCE RATS, written and illustrated by Piper Strange.',
-    description: 'A short story about rats doing science! I love science and I love rats and the combination makes a ridiculous comic.',
-    link: {
-      href: 'https://tapas.io/series/science-rats/info',
-      linkText: 'Read the story here',
-    },
-  },
-
-  {
-    title: 'By Any Other Name',
-    image: nameComic.src,
-    imageDescription: 'The cover of By Any Other Name, written and illustrated by Piper Strange.',
-    description: 'An autobiographical comic about my name change.',
-    link: {
-      href: 'https://tapas.io/series/By-Any-Other-Name-comic/info',
-      linkText: 'Read it here',
-    },
-  },
-
-  {
-    title: 'Misusing the Imagination',
-    image: worryComic.src,
-    imageDescription: 'The cover of Misusing the Imagination, written and illustrated by Piper Strange.',
-    description: 'An autobiographical comic written during the aftermath of an abusive relationship. Contains themes of suicide, domestic violence, and trauma. ',
-    link: {
-      href: 'https://tapas.io/series/Worry-is-a-Misuse-of-the-Imagination/info',
-      linkText: 'Read it here',
-    },
-  },
-
   {
     title: 'Life is Beautiful',
     image: lib.src,
@@ -112,7 +75,6 @@ export const graphicNovelData: graphicNovelDataTypes[] = [
       linkText: 'Read the story so far...',
     },
   },
-
   {
     title: 'Space Bunnies in Space',
     image: spaceBunnies.src,
@@ -123,7 +85,6 @@ export const graphicNovelData: graphicNovelDataTypes[] = [
       linkText: 'Read the first chapter',
     },
   },
-
   {
     title: 'Powerpuff Girls VS The Goddamn Batman',
     image: ppgvsbm.src,

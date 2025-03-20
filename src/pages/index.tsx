@@ -1,12 +1,17 @@
 /* eslint-disable import/no-unresolved */
+import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
-import styles from '../styles/Page.module.css';
 import PageLayout from '../layouts/PageLayout';
-import homeImg from '../images/selfportrait.png';
-import bun from '../images/bun.png';
 import phfont from '../utils/phfont';
 import news from '../projects/news';
+
+// Images
+import homeImg from '../images/selfportrait.png';
+import bun from '../images/bun.png';
+import stickerClub from '../images/sticker-club.png';
+
+import styles from '../styles/Page.module.css';
 
 const Home = () => (
   <PageLayout pageHeader='Piper Strange Art'>
@@ -23,11 +28,12 @@ const Home = () => (
           a nonbinary illustrator and comic artist from the UK.
           I like to make things and then inflict them on people on the internet.
         </p>
+        <Link href="https://ko-fi.com/piperstrangeart/tiers" target="_blank"><Image src={stickerClub} alt="An image advertising the Sticker Club" className={styles.homeBannerImg} width={400} /></Link>
       </div>
 
       <h2 className={phfont.className}>News</h2>
       <div className={styles.newsBox}>
-        <span className={styles.newsDate}>4th November 2024</span>
+        <span className={styles.newsDate}>20th March 2025</span>
         <p>
           {news}
         </p>

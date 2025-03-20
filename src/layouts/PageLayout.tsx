@@ -8,7 +8,7 @@ import HeadMetaTags from '../components/HeadMetaTags';
 
 const PageLayout = ({ pageHeader, children }: {
   pageHeader?: string, children: React.ReactNode
-  }) => {
+}) => {
   const [navigationOpen, setNavigationOpen] = useState<boolean>(false);
   const [showButton, setShowButton] = useState(false);
 
@@ -35,14 +35,14 @@ const PageLayout = ({ pageHeader, children }: {
   const toggleNavButtonDisplay = navigationOpen
     ? <p>X</p>
     : (
-        <div><div className={styles.burger1}/>
-          <div className={styles.burger2}/>
-          <div className={styles.burger3}/>
-        </div>
+      <div><div className={styles.burger1} />
+        <div className={styles.burger2} />
+        <div className={styles.burger3} />
+      </div>
     );
 
   return (
-  <div className={styles.container}>
+    <div className={styles.container}>
       <HeadMetaTags />
       <div className={styles.headerBox}>
         <nav className={styles.navigation}>
@@ -59,6 +59,7 @@ const PageLayout = ({ pageHeader, children }: {
               <li onClick={() => setNavigationOpen(false)}><Link href='/'>Home</Link></li>
               <li onClick={() => setNavigationOpen(false)}><Link href='/about'>About</Link></li>
               <li onClick={() => setNavigationOpen(false)}><Link href='/books'>Books</Link></li>
+              <li onClick={() => setNavigationOpen(false)}><Link href='https://ko-fi.com/piperstrangeart/shop' target='_blank'>Shop</Link></li>
               <li onClick={() => setNavigationOpen(false)}><Link href='/illustration'>Illustration</Link></li>
               <li onClick={() => setNavigationOpen(false)}><Link href='/comics'>Comics</Link></li>
               <li onClick={() => setNavigationOpen(false)}><Link href='/other'>Other</Link></li>
@@ -82,8 +83,8 @@ const PageLayout = ({ pageHeader, children }: {
 
       {
         showButton && <button className={styles.topScrollButton} onClick={() => onScrollClick()}>
-        &#8593;
-      </button>
+          &#8593;
+        </button>
       }
 
       <div className={styles.footer}>

@@ -1,5 +1,7 @@
 .projectWrapper {
     width: 100%;
+    display: inline-flex;
+    flex-direction: column;    
 }
 
 .projectGallery {

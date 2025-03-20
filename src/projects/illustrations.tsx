@@ -12,28 +12,8 @@ import trans from '../images/illustrations/trans.jpg';
 import treasure from '../images/illustrations/treasure.jpg';
 import wingedFox from '../images/illustrations/winged_fox.jpg';
 import memories from '../images/illustrations/memories.png';
-import fool from '../images/illustrations/tarot/the-fool.png';
-import magician from '../images/illustrations/tarot/the-magician.png';
-import highPriestess from '../images/illustrations/tarot/the-high-priestess.png';
-import empress from '../images/illustrations/tarot/the-empress.png';
-import emperor from '../images/illustrations/tarot/the-emperor.png';
-import hierophant from '../images/illustrations/tarot/the-hierophant.png';
-import lovers from '../images/illustrations/tarot/the-lovers.png';
-import justice from '../images/illustrations/tarot/justice.png';
-import chariot from '../images/illustrations/tarot/the-chariot.png';
-import hermit from '../images/illustrations/tarot/the-hermit.png';
-import wheel from '../images/illustrations/tarot/the-wheel-of-fortune.png';
-import strength from '../images/illustrations/tarot/strength.png';
-import hangedMan from '../images/illustrations/tarot/the-hanged-man.png';
-import death from '../images/illustrations/tarot/death.png';
-import temperance from '../images/illustrations/tarot/temperance.png';
-import devil from '../images/illustrations/tarot/the-devil.png';
-import tower from '../images/illustrations/tarot/the-tower.png';
-import star from '../images/illustrations/tarot/the-star.png';
-import moon from '../images/illustrations/tarot/the-moon.png';
-import sun from '../images/illustrations/tarot/the-sun.png';
-import judgement from '../images/illustrations/tarot/judgement.png';
-import world from '../images/illustrations/tarot/the-world.png';
+import tarot from '../images/illustrations/tarot-cards.png';
+import lgbtDinos from '../images/illustrations/lgbt-dinos.png';
 
 export interface artDataTypes {
   image: string,
@@ -46,8 +26,16 @@ export const artData: artDataTypes[] = [
     imageDescription: "An illustration of a fox wandering through the snow. Text above says 'Memories are the gifts they leave behind for you to keep.'",
   },
   {
+    image: tarot.src,
+    imageDescription: 'An image showing the Major Arcana tarot cards designed by Piper',
+  },
+  {
     image: colourful.src,
     imageDescription: 'An illustration of a colourfully dressed woman',
+  },
+  {
+    image: lgbtDinos.src,
+    imageDescription: '4 images of dinosaurs themed after the LGBT pride flags.',
   },
   {
     image: treasure.src,
@@ -96,97 +84,5 @@ export const artData: artDataTypes[] = [
   {
     image: angel.src,
     imageDescription: 'A digital painting of an angel',
-  },
-];
-
-export const tarotCards: artDataTypes[] = [
-  {
-    image: fool.src,
-    imageDescription: 'The Fool Tarot Card',
-  },
-  {
-    image: magician.src,
-    imageDescription: 'The Magician Tarot Card',
-
-  },
-  {
-    image: highPriestess.src,
-    imageDescription: 'The High Priestess Tarot Card',
-  },
-  {
-    image: empress.src,
-    imageDescription: 'The Empress Tarot Card',
-  },
-  {
-    image: emperor.src,
-    imageDescription: 'The Emperor Tarot Card',
-  },
-  {
-    image: hierophant.src,
-    imageDescription: 'The Hierophant Tarot Card',
-  },
-  {
-    image: lovers.src,
-    imageDescription: 'The Lovers Tarot Card',
-  },
-  {
-    image: chariot.src,
-    imageDescription: 'The Chariot Tarot Card',
-  },
-  {
-    image: justice.src,
-    imageDescription: 'Justice Tarot Card',
-  },
-  {
-    image: hermit.src,
-    imageDescription: 'The Hermit Tarot Card',
-  },
-  {
-    image: wheel.src,
-    imageDescription: 'The Wheel of Fortune',
-  },
-  {
-    image: strength.src,
-    imageDescription: 'Strength Tarot Card',
-  },
-  {
-    image: hangedMan.src,
-    imageDescription: 'The Hanged Man Tarot Card',
-  },
-  {
-    image: death.src,
-    imageDescription: 'Death Tarot Card',
-  },
-  {
-    image: temperance.src,
-    imageDescription: 'Temperance Tarot Card',
-  },
-  {
-    image: devil.src,
-    imageDescription: 'The Devil Tarot Card',
-  },
-  {
-    image: tower.src,
-    imageDescription: 'The Tower Tarot Card',
-  },
-  {
-    image: star.src,
-    imageDescription: 'The Star Tarot Card',
-  },
-  {
-    image: moon.src,
-    imageDescription: 'The Moon Tarot Card',
-  },
-  {
-    image: sun.src,
-    imageDescription: 'The Sun Tarot Card',
-  },
-  {
-    image: judgement.src,
-    imageDescription: 'Judgement Tarot Card',
-  },
-  {
-    image: world.src,
-    imageDescription: 'The World Tarot Card',
   },
 ];

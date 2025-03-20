@@ -21,16 +21,6 @@ const Other = () => (
       I make a lot of random nonsense and it&lsquo;s gotta go somewhere!
     </div>
     <ProjectLayout>
-      <ProjectBox linkTargetBlank project={{
-        title: 'Zines',
-        image: '',
-        imageDescription: '',
-        description: 'I love to create zines, and have made a bunch of them, some silly and some more serious!',
-        link: {
-          href: '/zines',
-          linkText: 'View all zines here',
-        },
-      }} />
       {otherProjectData.map((project, i) => <ProjectBox project={project} key={i} />)}
     </ProjectLayout>
   </PageLayout>

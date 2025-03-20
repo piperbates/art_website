@@ -8,14 +8,14 @@ import mugshot from '../images/mugshot.jpg';
 import SocialLinks from '../components/SocialLinks';
 
 const About = () => (
-    <PageLayout pageHeader='About'>
-      <div className={styles.content}>
+  <PageLayout pageHeader='About'>
+    <div className={styles.content}>
 
-        <div className={styles.mugshot}>
-          <Image src={mugshot} alt="A photograph of Piper, a nonbinary person with blue hair" />
-        </div>
+      <div className={styles.mugshot}>
+        <Image src={mugshot} alt="A photograph of Piper, a nonbinary person with blue hair" />
+      </div>
 
-        <h1 className={phfont.className}>Who is this weirdo?</h1>
+      <h1 className={phfont.className}>Who is this weirdo?</h1>
 
       <p>Piper Strange is a UK based illustrator
         and comic artist specialising in work with queer themes.
@@ -34,18 +34,14 @@ const About = () => (
         including comics, illustrated books, and more.
       </p>
 
-      <p>
-        They now work as a Software Engineer and pursue their passion projects in their free time.
-      </p>
-
-        <div className={styles.socialsBox}>
-          <h2 className={phfont.className}>
-            Find Piper elsewhere:
-          </h2>
-          <SocialLinks linkIsText />
-        </div>
+      <div className={styles.socialsBox}>
+        <h2 className={phfont.className}>
+          Find Piper elsewhere:
+        </h2>
+        <SocialLinks linkIsText />
       </div>
-    </PageLayout>
+    </div>
+  </PageLayout>
 );
 
 export default About;

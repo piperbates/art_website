@@ -4,7 +4,8 @@ import Link from 'next/link';
 import insta from '../images/social-media-icons/instagram.png';
 import koFi from '../images/social-media-icons/ko-fi.png';
 import facebook from '../images/social-media-icons/facebook.png';
-import redbubble from '../images/social-media-icons/redbubble.png';
+import bluesky from '../images/social-media-icons/bksy.png';
+import linktree from '../images/social-media-icons/linktree.png';
 
 const SocialLinks = ({ linkIsText }: { linkIsText?: boolean }) => {
   const socials = [
@@ -24,9 +25,14 @@ const SocialLinks = ({ linkIsText }: { linkIsText?: boolean }) => {
       icon: koFi.src,
     },
     {
-      href: 'https://www.redbubble.com/people/piperstrange',
-      name: 'Redbubble Shop',
-      icon: redbubble.src,
+      href: 'https://piperstrangeart.bsky.social',
+      name: 'Bluesky',
+      icon: bluesky.src,
+    },
+    {
+      href: 'https://linktr.ee/piperstrangeart',
+      name: 'LinkTree',
+      icon: linktree.src,
     },
   ];
 
