@@ -12,6 +12,8 @@ export interface bookDataTypes {
   link?: { href: string, linkText: string }
 }
 
+const buyText = 'Buy Now';
+
 export const bookData: bookDataTypes[] = [
   {
     title: 'My Gender Is Rats',
@@ -19,8 +21,8 @@ export const bookData: bookDataTypes[] = [
     imageDescription: 'The cover of My Gender Is Rats Piper Strange',
     description: 'My Gender Is Rats is a quirky, honest, and chaotic account of life owning pet rats. A collection of slightly unhinged and effortlessly relatable comics.',
     link: {
-      href: '',
-      linkText: 'Coming Soon!',
+      href: 'https://www.amazon.co.uk/My-Gender-Rats-Piper-Strange/dp/1836549016',
+      linkText: buyText,
     },
   },
 
@@ -31,7 +33,7 @@ export const bookData: bookDataTypes[] = [
     description: 'Written by Ellen Mellor and illustrated by Piper Strange. The Princess and the Elephant is a sweet, fun and funny fairytale for children of all genders about about acceptance, belief and the importance of support and allyship. ',
     link: {
       href: 'https://www.amazon.com.au/Princess-Elephant-Ellen-Mellor/dp/1838426647',
-      linkText: 'Buy on Amazon',
+      linkText: buyText,
     },
   },
 

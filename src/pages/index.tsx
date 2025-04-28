@@ -33,7 +33,7 @@ const Home = () => (
 
       <h2 className={phfont.className}>News</h2>
       <div className={styles.newsBox}>
-        <span className={styles.newsDate}>20th March 2025</span>
+        <span className={styles.newsDate}>28th April 2025</span>
         <p>
           {news}
         </p>
