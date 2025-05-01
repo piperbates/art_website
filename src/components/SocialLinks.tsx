@@ -6,6 +6,8 @@ import koFi from '../images/social-media-icons/ko-fi.png';
 import facebook from '../images/social-media-icons/facebook.png';
 import bluesky from '../images/social-media-icons/bksy.png';
 import linktree from '../images/social-media-icons/linktree.png';
+import email from '../images/social-media-icons/email.png';
+
 
 const SocialLinks = ({ linkIsText }: { linkIsText?: boolean }) => {
   const socials = [
@@ -33,6 +35,11 @@ const SocialLinks = ({ linkIsText }: { linkIsText?: boolean }) => {
       href: 'https://linktr.ee/piperstrangeart',
       name: 'LinkTree',
       icon: linktree.src,
+    },
+    {
+      href: 'mailto:piperstrangeart@gmail.com',
+      name: 'Contact',
+      icon: email.src,
     },
   ];
 
