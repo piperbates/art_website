@@ -8,7 +8,6 @@ import bluesky from '../images/social-media-icons/bksy.png';
 import linktree from '../images/social-media-icons/linktree.png';
 import email from '../images/social-media-icons/email.png';
 
-
 const SocialLinks = ({ linkIsText }: { linkIsText?: boolean }) => {
   const socials = [
     {
